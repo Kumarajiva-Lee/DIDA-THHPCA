@@ -1,0 +1,12 @@
+ [obstat_ini]
+   case_name                 = 'case_2222'
+   redis_address             = '192.168.1.1:6379,192.168.1.2:6379,192.168.1.3:6379'
+   redis_node                = '192.168.1.1'
+   obsstat_start_time        = '2000,01,05,00,00'
+   obsstat_end_time          = '2000,01,05,09,00'
+   obsstat_var_name          = 'u,v'
+   draw_level                = 1
+   draw_single               = 1
+   draw_global               = 1
+   obs_open                  = 0
+

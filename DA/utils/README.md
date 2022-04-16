@@ -1,0 +1,1 @@
+运行da_build.sh，完成DA模块的utils，letkf和EnDNN的编译

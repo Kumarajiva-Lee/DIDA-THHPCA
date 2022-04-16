@@ -1,0 +1,16 @@
+prefix=/home/export/base/systest/swpenv/jn/gptl
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+ccompiler=sw9gcc
+fcompiler=sw9gfortran
+
+Name: gptl
+Description: GPTL profiling library
+URL: http://github.com/jmrosinski/GPTL
+Version: 8.0.3
+Requires.private: 
+Libs: -L${libdir} -lgptlf -lgptl -lunwind -L/home/export/base/systest/swpenv/jn/gptl/lib -lunwind -lunwind-generic  -lunwind-ptrace  -lunwind-setjmp -rdynamic
+Libs.private: 
+Cflags: -I${includedir}
+Fflags: -I${includedir}

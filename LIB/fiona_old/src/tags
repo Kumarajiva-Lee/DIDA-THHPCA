@@ -1,0 +1,110 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+apply_dataset_to_netcdf_master	fiona_mod.F90	/^  subroutine apply_dataset_to_netcdf_master(/;"	s	module:fiona_mod
+apply_dataset_to_netcdf_slave	fiona_mod.F90	/^  subroutine apply_dataset_to_netcdf_slave(/;"	s	module:fiona_mod
+atts	fiona_mod.F90	/^    type(hash_table_type) atts$/;"	k	type:dataset_type
+author	fiona_mod.F90	/^    character(256) :: author /;"	k	type:dataset_type
+data_type	fiona_mod.F90	/^    integer data_type$/;"	k	type:var_type
+dataset_close	fiona_mod.F90	/^  subroutine dataset_close(/;"	s	module:fiona_mod
+dataset_final	fiona_mod.F90	/^  subroutine dataset_final(/;"	s	module:fiona_mod
+dataset_is_open	fiona_mod.F90	/^  logical function dataset_is_open(/;"	f	module:fiona_mod
+dataset_open	fiona_mod.F90	/^  subroutine dataset_open(/;"	s	module:fiona_mod
+dataset_type	fiona_mod.F90	/^  type dataset_type$/;"	t	module:fiona_mod
+datasets	fiona_mod.F90	/^  type(hash_table_type) datasets$/;"	v	module:fiona_mod
+decomp	fiona_mod.F90	/^    logical :: decomp /;"	k	type:dim_type
+desc	fiona_mod.F90	/^    character(256) :: desc /;"	k	type:dataset_type
+dim_type	fiona_mod.F90	/^  type dim_type$/;"	t	module:fiona_mod
+dims	fiona_mod.F90	/^    type(hash_table_type) dims$/;"	k	type:dataset_type
+dims	fiona_mod.F90	/^    type(var_dim_type), allocatable :: dims(/;"	k	type:var_type
+fi	fiona_test.F90	/^  real(8) fi(/;"	v	program:fiona_test
+file_end_idx	fiona_mod.F90	/^    integer file_start_idx, file_end_idx$/;"	k	type:dataset_type
+file_path	fiona_mod.F90	/^    character(256) :: file_path /;"	k	type:dataset_type
+file_paths	fiona_mod.F90	/^    character(256), allocatable :: file_paths(/;"	k	type:dataset_type
+file_prefix	fiona_mod.F90	/^    character(256) :: file_prefix /;"	k	type:dataset_type
+file_start_idx	fiona_mod.F90	/^    integer file_start_idx,/;"	k	type:dataset_type
+fiona	fiona.F90	/^module fiona$/;"	m
+fiona_add_att	fiona_mod.F90	/^  subroutine fiona_add_att(/;"	s	module:fiona_mod
+fiona_add_dim	fiona_mod.F90	/^  subroutine fiona_add_dim(/;"	s	module:fiona_mod
+fiona_add_var	fiona_mod.F90	/^  subroutine fiona_add_var(/;"	s	module:fiona_mod
+fiona_create_dataset	fiona_mod.F90	/^  subroutine fiona_create_dataset(/;"	s	module:fiona_mod
+fiona_end_input	fiona_mod.F90	/^  subroutine fiona_end_input(/;"	s	module:fiona_mod
+fiona_end_output	fiona_mod.F90	/^  subroutine fiona_end_output(/;"	s	module:fiona_mod
+fiona_get_att_i4	fiona_mod.F90	/^  subroutine fiona_get_att_i4(/;"	s	module:fiona_mod
+fiona_get_att_i8	fiona_mod.F90	/^  subroutine fiona_get_att_i8(/;"	s	module:fiona_mod
+fiona_get_att_r4	fiona_mod.F90	/^  subroutine fiona_get_att_r4(/;"	s	module:fiona_mod
+fiona_get_att_r8	fiona_mod.F90	/^  subroutine fiona_get_att_r8(/;"	s	module:fiona_mod
+fiona_get_att_str	fiona_mod.F90	/^  subroutine fiona_get_att_str(/;"	s	module:fiona_mod
+fiona_get_dim	fiona_mod.F90	/^  subroutine fiona_get_dim(/;"	s	module:fiona_mod
+fiona_get_var_att_str	fiona_mod.F90	/^  subroutine fiona_get_var_att_str(/;"	s	module:fiona_mod
+fiona_has_var	fiona_mod.F90	/^  logical function fiona_has_var(/;"	f	module:fiona_mod
+fiona_init	fiona_mod.F90	/^  subroutine fiona_init(/;"	s	module:fiona_mod
+fiona_input_0d	fiona_mod.F90	/^  subroutine fiona_input_0d(/;"	s	module:fiona_mod
+fiona_input_1d	fiona_mod.F90	/^  subroutine fiona_input_1d(/;"	s	module:fiona_mod
+fiona_input_2d	fiona_mod.F90	/^  subroutine fiona_input_2d(/;"	s	module:fiona_mod
+fiona_input_3d	fiona_mod.F90	/^  subroutine fiona_input_3d(/;"	s	module:fiona_mod
+fiona_input_4d	fiona_mod.F90	/^  subroutine fiona_input_4d(/;"	s	module:fiona_mod
+fiona_input_5d	fiona_mod.F90	/^  subroutine fiona_input_5d(/;"	s	module:fiona_mod
+fiona_mod	fiona_mod.F90	/^module fiona_mod$/;"	m
+fiona_open_dataset	fiona_mod.F90	/^  subroutine fiona_open_dataset(/;"	s	module:fiona_mod
+fiona_output_0d	fiona_mod.F90	/^  subroutine fiona_output_0d(/;"	s	module:fiona_mod
+fiona_output_1d	fiona_mod.F90	/^  subroutine fiona_output_1d(/;"	s	module:fiona_mod
+fiona_output_2d	fiona_mod.F90	/^  subroutine fiona_output_2d(/;"	s	module:fiona_mod
+fiona_output_3d	fiona_mod.F90	/^  subroutine fiona_output_3d(/;"	s	module:fiona_mod
+fiona_output_4d	fiona_mod.F90	/^  subroutine fiona_output_4d(/;"	s	module:fiona_mod
+fiona_output_5d	fiona_mod.F90	/^  subroutine fiona_output_5d(/;"	s	module:fiona_mod
+fiona_quick_output_1d_r8	fiona_mod.F90	/^  subroutine fiona_quick_output_1d_r8(/;"	s	module:fiona_mod
+fiona_quick_output_2d_r8	fiona_mod.F90	/^  subroutine fiona_quick_output_2d_r8(/;"	s	module:fiona_mod
+fiona_start_input	fiona_mod.F90	/^  subroutine fiona_start_input(/;"	s	module:fiona_mod
+fiona_start_output	fiona_mod.F90	/^  subroutine fiona_start_output(/;"	s	module:fiona_mod
+fiona_test	fiona_test.F90	/^program fiona_test$/;"	p
+fo	fiona_test.F90	/^  real(8) fo(/;"	v	program:fiona_test
+get_dataset	fiona_mod.F90	/^  function get_dataset(/;"	f	module:fiona_mod
+get_dim_from_dataset	fiona_mod.F90	/^  function get_dim_from_dataset(/;"	f	module:fiona_mod
+get_var_from_dataset	fiona_mod.F90	/^  function get_var_from_dataset(/;"	f	module:fiona_mod
+handle_error	fiona_mod.F90	/^  subroutine handle_error(/;"	s	module:fiona_mod
+id	fiona_mod.F90	/^    integer :: id /;"	k	type:dataset_type
+id	fiona_mod.F90	/^    integer id$/;"	k	type:dim_type
+id	fiona_mod.F90	/^    integer id$/;"	k	type:var_type
+ierr	fiona_test.F90	/^  integer ierr$/;"	v	program:fiona_test
+last_file_path	fiona_mod.F90	/^    character(256) last_file_path$/;"	k	type:dataset_type
+long_name	fiona_mod.F90	/^    character(256) long_name$/;"	k	type:dim_type
+long_name	fiona_mod.F90	/^    character(256) long_name$/;"	k	type:var_type
+mode	fiona_mod.F90	/^    character(10) mode$/;"	k	type:dataset_type
+mpi_comm	fiona_mod.F90	/^    integer :: mpi_comm /;"	k	type:dataset_type
+name	fiona_mod.F90	/^    character(30) name$/;"	k	type:dataset_type
+name	fiona_mod.F90	/^    character(30) name$/;"	k	type:dim_type
+name	fiona_mod.F90	/^    character(30) name$/;"	k	type:var_type
+num_proc	fiona_mod.F90	/^    integer :: num_proc /;"	k	type:dataset_type
+proc_id	fiona_mod.F90	/^    integer :: proc_id /;"	k	type:dataset_type
+proc_id	fiona_test.F90	/^  integer :: proc_id /;"	v	program:fiona_test
+ptr	fiona_mod.F90	/^    type(dim_type), pointer :: ptr /;"	k	type:var_dim_type
+size	fiona_mod.F90	/^    integer size$/;"	k	type:dim_type
+start_time_str	fiona_mod.F90	/^    character(30) start_time_str$/;"	k	type:dataset_type
+start_time_str	fiona_mod.F90	/^  character(30) start_time_str$/;"	v	module:fiona_mod
+test_input	fiona_test.F90	/^  subroutine test_input(/;"	s	program:fiona_test
+test_output	fiona_test.F90	/^  subroutine test_output(/;"	s	program:fiona_test
+test_parallel_input	fiona_test.F90	/^  subroutine test_parallel_input(/;"	s	program:fiona_test
+test_quick_output	fiona_test.F90	/^  subroutine test_quick_output(/;"	s	program:fiona_test
+test_suite	fiona_test.F90	/^  type(test_suite_/;"	v	program:fiona_test
+time_in_seconds	fiona_mod.F90	/^    real(8) :: time_in_seconds /;"	k	type:dataset_type
+time_step	fiona_mod.F90	/^    integer :: time_step /;"	k	type:dataset_type
+time_units_in_seconds	fiona_mod.F90	/^    real(8) time_units_in_seconds$/;"	k	type:dataset_type
+time_units_in_seconds	fiona_mod.F90	/^  real(8) time_units_in_seconds$/;"	v	module:fiona_mod
+time_units_str	fiona_mod.F90	/^    character(30) time_units_str$/;"	k	type:dataset_type
+time_units_str	fiona_mod.F90	/^  character(30) time_units_str$/;"	v	module:fiona_mod
+time_var	fiona_mod.F90	/^    type(var_type), pointer :: time_var /;"	k	type:dataset_type
+units	fiona_mod.F90	/^    character(60) units$/;"	k	type:dim_type
+units	fiona_mod.F90	/^    character(60) units$/;"	k	type:var_type
+var_dim_type	fiona_mod.F90	/^  type var_dim_type$/;"	t	module:fiona_mod
+var_final	fiona_mod.F90	/^  subroutine var_final(/;"	s	module:fiona_mod
+var_type	fiona_mod.F90	/^  type var_type$/;"	t	module:fiona_mod
+variant_dim	fiona_mod.F90	/^    character(30) :: variant_dim /;"	k	type:dataset_type
+vars	fiona_mod.F90	/^    type(hash_table_type) vars$/;"	k	type:dataset_type
+xi	fiona_test.F90	/^  real(8) xi(/;"	v	program:fiona_test
+xo	fiona_test.F90	/^  real(8) xo(/;"	v	program:fiona_test
+yi	fiona_test.F90	/^  real(8) yi(/;"	v	program:fiona_test
+yo	fiona_test.F90	/^  real(8) yo(/;"	v	program:fiona_test

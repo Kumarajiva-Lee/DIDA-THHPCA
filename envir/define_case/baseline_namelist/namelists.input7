@@ -1,0 +1,92 @@
+ &namelist_total
+   case_name                 = '0-7-0'
+   redis_address             = '12.5.1.1:6379,12.5.1.2:6379'
+   atm_mpas_sceneid          = '7'
+   num_lon                   = 2400 
+   num_lat                   = 800
+   num_lev                   = 32
+   atm_mpas2atm_time         = '1 days'
+   atm_phase_diff            = 1800
+   da_endnn_in_seconds       = 30
+   da_start_time             = 2019,06,07,00,00
+   end_time                  = 2019,06,21,00,00
+   da_in_seconds             = 10800
+   atm_ensemble_total        = 32
+   atm_ensemble_group        = 1
+   da_ensemble               = 1
+   da_var_name               = 'ps,u,v,pt'
+   da_asynchronous           = 0
+   da_mode                   = 0
+   atm_group                 = 120
+   atm_group_num             = 1
+   atm_stride                = 201
+   atm_root                  = 0
+   da_group                  = 81
+   da_group_num              = 1
+   da_stride                 = 201
+   da_root                   = 120
+   vert_coord_template       = 'wrf_l32'
+   vert_coord_scheme         = 'hybrid'
+/
+ &namelist_atm
+   num_proc_lon              = 1
+   num_proc_lat              = 120
+   test_case                 = 'gmcore_mpas_try'
+   initial_file_type         = 'time'   !'number'
+   initial_interval          = 480 
+   initial_file              = '/home/xuewei/lustre/share/inifile/gmcore/360x180_0.5h/l32/gmcore_360x180_2019-06-02_00.00.00.nc'
+   time_scheme               = 'pc2'
+   start_time                = 2019,06,06,21,00
+   end_time                  = 2019,06,21,00,00
+   dt_in_seconds             = 90
+   print_interval            = '1 hours'
+   history_interval          = '3 hours'
+   pv_scheme                 = 1
+   upwind_order              = 1
+   reduce_factors            = 36 18 9 6 5 4 3 3 3 3 2 2 2 2 2 2
+   reduce_pv_directly        = .true.
+   do_reduce_ke              = .true.
+   use_div_damp              = .true.
+   div_damp_coef2            = 0.01
+   use_vor_damp              = .true.
+   vor_damp_coef2            = 0.005
+   vor_damp_lat0             = 70
+   vor_damp_decay            = 0.1
+   use_polar_damp            = .true.
+   member_num                = 32
+   use_create_ensemble       = .false.
+/
+ &namelist_da
+   da_loc_distance           = 40.0
+   da_inflation_factor       = 1
+   da_polar_letkf_lat        = 85.0
+   da_gc_enable              = .false.
+   da_obs_sparse             = 1
+   da_obs_dense              = 3
+   da_block_interval         = 1
+   da_block_overlap          = 0
+   da_halo                   = 1
+   da_kernel                 = 5
+   da_conv_stride            = 3
+   da_pc_f                   = 9
+   da_pc_p1                  = 9
+   da_pc_p2                  = 9
+   da_proc_f                 = 0.001
+   da_proc_p                 = 0.999
+/
+ &namelist_obs
+   ps_pos                    = 1
+   obs_hrz_interval_lon      = 4
+   obs_hrz_interval_lat      = 4
+   obs_vtc_interval          = 4
+   obs_var_name              = 'pt,u,v'
+   obs_stat_interval_lon     = 1
+   obs_stat_interval_lat     = 1
+   obs_stat_interval_vertical= 4
+   mpas_num_lev_start        = 24
+   mpas_num_lev              = 60
+   onepoint_x                = 40
+   onepoint_y                = 150
+   onepoint_z                = 14
+   randn_filepath            = '/home/xuewei/lustre/share/test_data/data/'
+/

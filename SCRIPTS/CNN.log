@@ -1,0 +1,798 @@
+[3542424 ## mn032: 9208 ## 2022-04-15/23:53:45] cnodenum= 21, job-resource-list: 22024-22043,22015
+[3542424 ## mn032: 9208 ## 2022-04-15/23:53:45] nodelist[0-19]=22024-22043, mpenum=6, mpemap=0x3f, spemap=<FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF>
+[3542424 ## mn032: 9208 ## 2022-04-15/23:53:45] nodelist[20]=22015, mpenum=4, mpemaplist=0Xf, spemap=<00000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF>
+[3542424 ## mn032: 9208 ## 2022-04-15/23:53:45] control node is: mn032.
+[3542424 ## mn032: 9208 ## 2022-04-15/23:53:45] sub control node number is 1, list: mn389.
+[3542424 ## vn022024: 24449 ## 2022-04-15/23:53:47] job's first task will run: /usr/bin/swrun -b 1 -K 4096 -s 15000 -c 0 -j 3542424 -F 0xFFFFFFFFFFFFFFFF -i ../../build/dida.exe namelists.input 
+[  ===> ][20220415/        ][M: COUPLER] Start DIDA Program!
+[  ===> ][20220415/        ][M: COUPLER] read namelist:namelists.input
+[  ===> ][20220415/        ][M: COUPLER] =========== total namelists ========
+[  ===> ][20220415/        ][M: COUPLER] case_name          :testcnn
+[  ===> ][20220415/        ][M: COUPLER] redis_address      :18.3.96.70:6390,18.3.96.70:6391
+[  ===> ][20220415/        ][M: COUPLER] atm_mpas_sceneid   :3
+[  ===> ][20220415/        ][M: COUPLER] num_lon            :360
+[  ===> ][20220415/        ][M: COUPLER] num_lat            :180
+[  ===> ][20220415/        ][M: COUPLER] num_lev            :32
+[  ===> ][20220415/        ][M: COUPLER] atm_mpas2atm_time  :1 days
+[  ===> ][20220415/        ][M: COUPLER] atm_phase_diff     :1800
+[  ===> ][20220415/        ][M: COUPLER] da_endnn_in_seconds:30
+[  ===> ][20220415/        ][M: COUPLER] da_start_time      :2019, 6, 7, 0, 0,
+[  ===> ][20220415/        ][M: COUPLER] end_time           :2019, 6, 7, 3, 0,
+[  ===> ][20220415/        ][M: COUPLER] da_in_seconds      :10800
+[  ===> ][20220415/        ][M: COUPLER] atm_ensemble_total :1
+[  ===> ][20220415/        ][M: COUPLER] atm_ensemble_group :1
+[  ===> ][20220415/        ][M: COUPLER] da_ensemble        :1
+[  ===> ][20220415/        ][M: COUPLER] da_var_name        :ps,u,v,pt
+[  ===> ][20220415/        ][M: COUPLER] da_asynchronous    :0
+[  ===> ][20220415/        ][M: COUPLER] da_mode            :0
+[  ===> ][20220415/        ][M: COUPLER] atm_group          :60
+[  ===> ][20220415/        ][M: COUPLER] atm_group_num      :1
+[  ===> ][20220415/        ][M: COUPLER] atm_stride         :124
+[  ===> ][20220415/        ][M: COUPLER] atm_root           :0
+[  ===> ][20220415/        ][M: COUPLER] da_group           :64
+[  ===> ][20220415/        ][M: COUPLER] da_group_num       :1
+[  ===> ][20220415/        ][M: COUPLER] da_stride          :124
+[  ===> ][20220415/        ][M: COUPLER] da_root            :60
+[  ===> ][20220415/        ][M: COUPLER] init_coupler_config done!
+[  ===> ][20220415/        ][M: COUPLER] =========== COUPLER INFO ========
+[34m==> [0mDA MODEL BEGIN!
+[  ===> ][20220415/        ][M: COUPLER] Total PROCS        :124
+[  ===> ][20220415/        ][M: COUPLER] ATM TOTAL PROCS    :60
+[  ===> ][20220415/        ][M: COUPLER] DA TOTAL PROCS     :64
+[  ===> ][20220415/        ][M: COUPLER] MCT ncomps         :2
+[  ===> ][20220415/        ][M: COUPLER] ATM comps          :1
+[  ===> ][20220415/        ][M: COUPLER] DA comps           :1
+[  ===> ][20220415/        ][M: COUPLER] init_coupler done!
+[34m==> [0mATM MODEL BEGIN!
+ Finish Init
+ =================== GMCORE Parameters ===================
+ case_name           = testcnn
+ num_lon             = 360
+ num_lat             = 180
+ num_lev             = 32
+ num_proc_total      = 60
+ num_proc_lon        = 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+ num_proc_lat        = 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+ blocked_comm        = false
+ partition_type      = irregular
+ minimal_halo        = false
+ hydrostatic         = true
+ nonhydrostatic      = false
+ vert_coord_scheme   = hybrid
+ vert_coord_template = wrf_l32
+ ptop                = 219.40
+ dt_in_seconds       = 360.
+ max_wave_speed      =    300.00000000000000     
+ max_cfl             =   0.50000000000000000     
+ filter_coef_a       =    1.2000000000000000     
+ filter_coef_b       =   0.40000000596046448     
+ filter_coef_c       =   0.40000000596046448     
+ pgf_scheme          = lin97
+ transport_scheme    = ffsl
+ limiter_type        = pd
+ ffsl_flux_type      = ppm
+ ke_scheme           = 2
+ ke_cell_wgt         = 0.375
+ pv_scheme           = 2
+ pv_pole_stokes      = true
+ upwind_order_pv     = 3
+ upwind_wgt_pv       = 1.00
+ zonal_tridiag_solver= spk
+ time_scheme         = wrfrk3
+ weno_order          = -1
+ upwind_order        = 3
+ upwind_wgt          = 1.00
+ upwind_wgt_pt       = 0.250
+ use_vor_damp        = true
+ vor_damp_cycles     = 1
+ vor_damp_coef2      =    5.0000002374872565E-004
+ vor_damp_lat0       =    50.000000000000000     
+ use_div_damp        = true
+ div_damp_cycles     = 5
+ div_damp_coef2      =    7.8125000000000000E-003
+ div_damp_top        = 3.000
+ div_damp_pole       =    0.0000000000000000     
+ div_damp_lat0       =    90.000000000000000     
+ use_smag_damp       = true
+ smag_damp_coef      = 0.20
+ print_interval      = 1 hours
+ history_interval    = 1 hours
+ output_nc           = true
+ output_Agrid        = false
+ member_inside       = 1
+ member_total        = 1
+ vector_outside      = 1
+ use_create_ensemble = false
+ initial_file_type   = time                          
+ initial_interval   = 1920
+ =========================================================
+[[32mNotice[0m]: Model top pressure is 219.40Pa.
+[[33mWarning[0m]: Parameter restart_interval is not set, so no restart file outputted.
+[[32mNotice[0m]: da_couper init
+[[32mNotice[0m]: segmap1 init
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: router init
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: Use /home/export/online1/mdt00/shisuan/swthhpca/DIDA-SHARE/share/geog/ETOPO1_Ice_g_gmt4.grd as topography.
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+[[32mNotice[0m]: da coupler init end
+[[32mNotice[0m]: cnn_init
+[[32mNotice[0m]: cnn range:1 90 1 45 1 8
+[[32mNotice[0m]: cnn range:1 90 1 45 9 16
+[[32mNotice[0m]: cnn range:1 90 1 45 17 24
+[[32mNotice[0m]: cnn range:1 90 1 45 25 32
+[[32mNotice[0m]: cnn range:1 90 46 90 1 8
+[[32mNotice[0m]: cnn range:1 90 46 90 9 16
+[[32mNotice[0m]: cnn range:1 90 46 90 17 24
+[[32mNotice[0m]: cnn range:1 90 46 90 25 32
+[[32mNotice[0m]: cnn range:1 90 91 135 1 8
+[[32mNotice[0m]: cnn range:1 90 91 135 9 16
+[[32mNotice[0m]: cnn range:1 90 91 135 17 24
+[[32mNotice[0m]: cnn range:1 90 91 135 25 32
+[[32mNotice[0m]: cnn range:1 90 136 180 1 8
+[[32mNotice[0m]: cnn range:1 90 136 180 9 16
+[[32mNotice[0m]: cnn range:1 90 136 180 17 24
+[[32mNotice[0m]: cnn range:1 90 136 180 25 32
+[[32mNotice[0m]: cnn range:91 180 1 45 1 8
+[[32mNotice[0m]: cnn range:91 180 1 45 9 16
+[[32mNotice[0m]: cnn range:91 180 1 45 17 24
+[[32mNotice[0m]: cnn range:91 180 1 45 25 32
+[[32mNotice[0m]: cnn range:91 180 46 90 1 8
+[[32mNotice[0m]: cnn range:91 180 46 90 9 16
+[[32mNotice[0m]: cnn range:91 180 46 90 17 24
+[[32mNotice[0m]: cnn range:91 180 46 90 25 32
+[[32mNotice[0m]: cnn range:91 180 91 135 1 8
+[[32mNotice[0m]: cnn range:91 180 91 135 9 16
+[[32mNotice[0m]: cnn range:91 180 91 135 17 24
+[[32mNotice[0m]: cnn range:91 180 91 135 25 32
+[[32mNotice[0m]: cnn range:91 180 136 180 1 8
+[[32mNotice[0m]: cnn range:91 180 136 180 9 16
+[[32mNotice[0m]: cnn range:91 180 136 180 17 24
+[[32mNotice[0m]: cnn range:91 180 136 180 25 32
+[[32mNotice[0m]: cnn range:181 270 1 45 1 8
+[[32mNotice[0m]: cnn range:181 270 1 45 9 16
+[[32mNotice[0m]: cnn range:181 270 1 45 17 24
+[[32mNotice[0m]: cnn range:181 270 1 45 25 32
+[[32mNotice[0m]: cnn range:181 270 46 90 1 8
+[[32mNotice[0m]: cnn range:181 270 46 90 9 16
+[[32mNotice[0m]: cnn range:181 270 46 90 17 24
+[[32mNotice[0m]: cnn range:181 270 46 90 25 32
+[[32mNotice[0m]: cnn range:181 270 91 135 1 8
+[[32mNotice[0m]: cnn range:181 270 91 135 9 16
+[[32mNotice[0m]: cnn range:181 270 91 135 17 24
+[[32mNotice[0m]: cnn range:181 270 91 135 25 32
+[[32mNotice[0m]: cnn range:181 270 136 180 1 8
+[[32mNotice[0m]: cnn range:181 270 136 180 9 16
+[[32mNotice[0m]: cnn range:181 270 136 180 17 24
+[[32mNotice[0m]: cnn range:181 270 136 180 25 32
+[[32mNotice[0m]: cnn range:271 360 1 45 1 8
+[[32mNotice[0m]: cnn range:271 360 1 45 9 16
+[[32mNotice[0m]: cnn range:271 360 1 45 17 24
+[[32mNotice[0m]: cnn range:271 360 1 45 25 32
+[[32mNotice[0m]: cnn range:271 360 46 90 1 8
+[[32mNotice[0m]: cnn range:271 360 46 90 9 16
+[[32mNotice[0m]: cnn range:271 360 46 90 17 24
+[[32mNotice[0m]: cnn range:271 360 46 90 25 32
+[[32mNotice[0m]: cnn range:271 360 91 135 1 8
+[[32mNotice[0m]: cnn range:271 360 91 135 9 16
+[[32mNotice[0m]: cnn range:271 360 91 135 17 24
+[[32mNotice[0m]: cnn range:271 360 91 135 25 32
+[[32mNotice[0m]: cnn range:271 360 136 180 1 8
+[[32mNotice[0m]: cnn range:271 360 136 180 9 16
+[[32mNotice[0m]: cnn range:271 360 136 180 17 24
+[[32mNotice[0m]: cnn range:271 360 136 180 25 32
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: num_topo_lon = 21601, num_topo_lat = 10801
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+[[32mNotice[0m]: Use MPAS /home/export/online1/mdt00/shisuan/swthhpca/DIDA-SHARE/share/inifile/mpas/360x180_newgrid/20190601/MPAS_360x180_2019-06-02_00.00.00.nc as background.
+[[32mNotice[0m]: Regrid mean sea level pressure and calculate surface pressure based on pressure-height formula.
+[[32mNotice[0m]: Calculate pressure on each grid.
+[[32mNotice[0m]: Regrid temperature and calculate potential temperature.
+[[32mNotice[0m]: Regrid u wind component.
+[[32mNotice[0m]: Regrid v wind component.
+[[32mNotice[0m]: Begin atm_run
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: cnn_init_end
+[[32mNotice[0m]: da_time 1
+[[32mNotice[0m]: read mean & std of cnn
+[[32mNotice[0m]: finish read std & mean
+[34m==> [0m2019-06-06T23:30:00Z 0.501662838518681E+20 0.128232243389683E+26 36153.6142892060
+[[32mNotice[0m]: Time cost 98.5009 seconds.
+[34m==> [0m2019-06-07T00:30:00Z 0.501662838518680E+20 0.128231184404596E+26 36064.7281568743
+[[32mNotice[0m]: Time cost 114.981 seconds.
+[34m==> [0m2019-06-07T01:30:00Z 0.501662838518681E+20 0.128231046728778E+26 36109.3663827319
+[[32mNotice[0m]: Time cost 114.043 seconds.
+[34m==> [0m2019-06-07T02:30:00Z 0.501662838518681E+20 0.128230908395836E+26 36131.9310887935
+           4 ps   u    v    pt              1          32          32          32
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: before cnn_predict 62
+[[32mNotice[0m]: before cnn_predict 1
+[[32mNotice[0m]: before cnn_predict 16
+[[32mNotice[0m]: before cnn_predict 33
+[[32mNotice[0m]: before cnn_predict 48
+[[32mNotice[0m]: before cnn_predict 49
+[[32mNotice[0m]: before cnn_predict 17
+[[32mNotice[0m]: before cnn_predict 32
+[[32mNotice[0m]: before cnn_predict 14
+[[32mNotice[0m]: before cnn_predict 46
+[[32mNotice[0m]: before cnn_predict 30
+[[32mNotice[0m]: before cnn_predict 0
+[[32mNotice[0m]: before cnn_predict 63
+[[32mNotice[0m]: before cnn_predict 31
+[[32mNotice[0m]: before cnn_predict 15
+[[32mNotice[0m]: before cnn_predict 47
+[[32mNotice[0m]: before cnn_predict 34
+[[32mNotice[0m]: before cnn_predict 28
+[[32mNotice[0m]: before cnn_predict 2
+[[32mNotice[0m]: before cnn_predict 44
+[[32mNotice[0m]: before cnn_predict 19
+[[32mNotice[0m]: before cnn_predict 50
+[[32mNotice[0m]: before cnn_predict 3
+[[32mNotice[0m]: before cnn_predict 18
+[[32mNotice[0m]: before cnn_predict 61
+[[32mNotice[0m]: before cnn_predict 51
+[[32mNotice[0m]: before cnn_predict 13
+[[32mNotice[0m]: before cnn_predict 60
+[[32mNotice[0m]: before cnn_predict 29
+[[32mNotice[0m]: before cnn_predict 45
+[[32mNotice[0m]: before cnn_predict 12
+[[32mNotice[0m]: before cnn_predict 40
+[[32mNotice[0m]: before cnn_predict 35
+[[32mNotice[0m]: before cnn_predict 24
+[[32mNotice[0m]: before cnn_predict 42
+[[32mNotice[0m]: before cnn_predict 36
+[[32mNotice[0m]: before cnn_predict 41
+[[32mNotice[0m]: before cnn_predict 8
+[[32mNotice[0m]: before cnn_predict 43
+[[32mNotice[0m]: before cnn_predict 57
+[[32mNotice[0m]: before cnn_predict 23
+[[32mNotice[0m]: before cnn_predict 56
+[[32mNotice[0m]: before cnn_predict 20
+[[32mNotice[0m]: before cnn_predict 27
+[[32mNotice[0m]: before cnn_predict 25
+[[32mNotice[0m]: before cnn_predict 26
+[[32mNotice[0m]: before cnn_predict 4
+[[32mNotice[0m]: before cnn_predict 11
+[[32mNotice[0m]: before cnn_predict 10
+[[32mNotice[0m]: before cnn_predict 9
+[[32mNotice[0m]: before cnn_predict 52
+[[32mNotice[0m]: before cnn_predict 39
+[[32mNotice[0m]: before cnn_predict 59
+[[32mNotice[0m]: before cnn_predict 58
+[[32mNotice[0m]: before cnn_predict 7
+[[32mNotice[0m]: before cnn_predict 55
+[[32mNotice[0m]: before cnn_predict 22
+[[32mNotice[0m]: before cnn_predict 37
+[[32mNotice[0m]: before cnn_predict 38
+[[32mNotice[0m]: before cnn_predict 21
+[[32mNotice[0m]: before cnn_predict 54
+[[32mNotice[0m]: before cnn_predict 5
+[[32mNotice[0m]: before cnn_predict 53
+[[32mNotice[0m]: before cnn_predict 6
+[[32mNotice[0m]: after cnn_predict 0
+[[32mNotice[0m]: after cnn_predict 48
+[[32mNotice[0m]: after cnn_predict 30
+[[32mNotice[0m]: after cnn_predict 12
+[[32mNotice[0m]: after cnn_predict 60
+[[32mNotice[0m]: after cnn_predict 42
+[[32mNotice[0m]: after cnn_predict 46
+[[32mNotice[0m]: after cnn_predict 16
+[[32mNotice[0m]: after cnn_predict 18
+[[32mNotice[0m]: after cnn_predict 31
+[[32mNotice[0m]: after cnn_predict 63
+[[32mNotice[0m]: after cnn_predict 36
+[[32mNotice[0m]: after cnn_predict 54
+[[32mNotice[0m]: after cnn_predict 49
+[[32mNotice[0m]: after cnn_predict 47
+[[32mNotice[0m]: after cnn_predict 1
+[[32mNotice[0m]: after cnn_predict 24
+[[32mNotice[0m]: after cnn_predict 33
+[[32mNotice[0m]: after cnn_predict 6
+[[32mNotice[0m]: after cnn_predict 17
+[[32mNotice[0m]: after cnn_predict 62
+[[32mNotice[0m]: after cnn_predict 14
+[[32mNotice[0m]: after cnn_predict 34
+[[32mNotice[0m]: after cnn_predict 15
+[[32mNotice[0m]: after cnn_predict 21
+[[32mNotice[0m]: after cnn_predict 3
+[[32mNotice[0m]: after cnn_predict 29
+[[32mNotice[0m]: after cnn_predict 28
+[[32mNotice[0m]: after cnn_predict 43
+[[32mNotice[0m]: after cnn_predict 61
+[[32mNotice[0m]: after cnn_predict 45
+[[32mNotice[0m]: after cnn_predict 19
+[[32mNotice[0m]: after cnn_predict 50
+[[32mNotice[0m]: after cnn_predict 35
+[[32mNotice[0m]: after cnn_predict 40
+[[32mNotice[0m]: after cnn_predict 10
+[[32mNotice[0m]: after cnn_predict 25
+[[32mNotice[0m]: after cnn_predict 13
+[[32mNotice[0m]: after cnn_predict 32
+[[32mNotice[0m]: after cnn_predict 2
+[[32mNotice[0m]: after cnn_predict 23
+[[32mNotice[0m]: after cnn_predict 44
+[[32mNotice[0m]: after cnn_predict 52
+[[32mNotice[0m]: after cnn_predict 11
+[[32mNotice[0m]: after cnn_predict 51
+[[32mNotice[0m]: after cnn_predict 56
+[[32mNotice[0m]: after cnn_predict 20
+[[32mNotice[0m]: after cnn_predict 26
+[[32mNotice[0m]: after cnn_predict 41
+[[32mNotice[0m]: after cnn_predict 58
+[[32mNotice[0m]: after cnn_predict 8
+[[32mNotice[0m]: after cnn_predict 7
+[[32mNotice[0m]: after cnn_predict 55
+[[32mNotice[0m]: after cnn_predict 4
+[[32mNotice[0m]: after cnn_predict 9
+[[32mNotice[0m]: after cnn_predict 39
+[[32mNotice[0m]: after cnn_predict 22
+[[32mNotice[0m]: after cnn_predict 27
+[[32mNotice[0m]: after cnn_predict 37
+[[32mNotice[0m]: after cnn_predict 59
+[[32mNotice[0m]: after cnn_predict 38
+[[32mNotice[0m]: after cnn_predict 57
+[[32mNotice[0m]: after cnn_predict 53
+[[32mNotice[0m]: after cnn_predict 5
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Letkf run done!
+[34m==> [0mvarlist: ps:u:v:pt
+[34m==> [0mda_2d_num: 1
+[34m==> [0mda_3d_num: 3
+[34m==> [0mdate_char: 201906070000
+[34m==> [0mlonstep: 1
+[34m==> [0mlatstep: 1
+[34m==> [0mztep: 4
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[34m==> [0mDA MODEL END!
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Finish atm_run
+[[32mNotice[0m]: Atm_run time cost 548.434 seconds.
+[[32mNotice[0m]: Finish atm_final
+[34m==> [0mATM MODEL END!
+[  ===> ][20220416/        ][M: COUPLER] DIDA End!
+[3542424 ## mn032: 9208 ## 2022-04-16/00:03:30] job_finished. use-time: 584.828757 (secs)

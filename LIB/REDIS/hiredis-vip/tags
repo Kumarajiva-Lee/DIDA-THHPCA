@@ -1,0 +1,786 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AF_LOCAL	net.h	41;"	d
+AL_START_HEAD	adlist.h	90;"	d
+AL_START_TAIL	adlist.h	91;"	d
+ASSERT	hiutil.h	225;"	d
+ASSERT	hiutil.h	235;"	d
+ASSERT	hiutil.h	245;"	d
+CLUSTER_ADDRESS_SEPARATOR	hircluster.c	26;"	d	file:
+CLUSTER_DEFAULT_MAX_REDIRECT_COUNT	hircluster.c	28;"	d	file:
+CLUSTER_ERR_ASK	hircluster.c	/^    CLUSTER_ERR_ASK,$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_ERR_CLUSTERDOWN	hircluster.c	/^    CLUSTER_ERR_CLUSTERDOWN,$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_ERR_CROSSSLOT	hircluster.c	/^    CLUSTER_ERR_CROSSSLOT,$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_ERR_MOVED	hircluster.c	/^    CLUSTER_ERR_MOVED,$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_ERR_SENTINEL	hircluster.c	/^    CLUSTER_ERR_SENTINEL$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_ERR_TRYAGAIN	hircluster.c	/^    CLUSTER_ERR_TRYAGAIN,$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_ERR_TYPE	hircluster.c	/^typedef enum CLUSTER_ERR_TYPE{$/;"	g	file:
+CLUSTER_ERR_TYPE	hircluster.c	/^}CLUSTER_ERR_TYPE;$/;"	t	typeref:enum:CLUSTER_ERR_TYPE	file:
+CLUSTER_NOT_ERR	hircluster.c	/^    CLUSTER_NOT_ERR = 0,$/;"	e	enum:CLUSTER_ERR_TYPE	file:
+CMD_PARSE_AGAIN	command.h	/^    CMD_PARSE_AGAIN,                      \/* incomplete -> parse again *\/$/;"	e	enum:cmd_parse_result
+CMD_PARSE_ENOMEM	command.h	/^    CMD_PARSE_ENOMEM,                     \/* out of memory *\/$/;"	e	enum:cmd_parse_result
+CMD_PARSE_ERROR	command.h	/^    CMD_PARSE_ERROR,                      \/* parsing error *\/$/;"	e	enum:cmd_parse_result
+CMD_PARSE_OK	command.h	/^    CMD_PARSE_OK,                         \/* parsing ok *\/$/;"	e	enum:cmd_parse_result
+CMD_PARSE_REPAIR	command.h	/^    CMD_PARSE_REPAIR,                     \/* more to parse -> repair parsed & unparsed data *\/$/;"	e	enum:cmd_parse_result
+CMD_TYPE_CODEC	command.h	/^    CMD_TYPE_CODEC(DEFINE_ACTION)$/;"	e	enum:cmd_type
+CMD_TYPE_CODEC	command.h	17;"	d
+CR	hiutil.h	16;"	d
+CRLF	hiutil.h	17;"	d
+CRLF_LEN	hiutil.h	18;"	d
+DEFINE_ACTION	command.h	131;"	d
+DEFINE_ACTION	command.h	135;"	d
+DICT_ERR	dict.h	40;"	d
+DICT_HT_INITIAL_SIZE	dict.h	76;"	d
+DICT_NOTUSED	dict.h	43;"	d
+DICT_OK	dict.h	39;"	d
+HIRCLUSTER_FLAG_ADD_OPENSLOT	hircluster.h	27;"	d
+HIRCLUSTER_FLAG_ADD_SLAVE	hircluster.h	24;"	d
+HIRCLUSTER_FLAG_NULL	hircluster.h	19;"	d
+HIRCLUSTER_FLAG_ROUTE_USE_SLOTS	hircluster.h	31;"	d
+HIREDIS_MAJOR	hiredis.h	42;"	d
+HIREDIS_MINOR	hiredis.h	43;"	d
+HIREDIS_PATCH	hiredis.h	44;"	d
+HIREDIS_VIP_MAJOR	hircluster.h	8;"	d
+HIREDIS_VIP_MINOR	hircluster.h	9;"	d
+HIREDIS_VIP_PATCH	hircluster.h	10;"	d
+HI_ALIGN	hiutil.h	59;"	d
+HI_ALIGNMENT	hiutil.h	58;"	d
+HI_ALIGN_PTR	hiutil.h	60;"	d
+HI_EAGAIN	hiutil.h	10;"	d
+HI_ENOMEM	hiutil.h	11;"	d
+HI_ERROR	hiutil.h	9;"	d
+HI_INET4_ADDRSTRLEN	hiutil.h	29;"	d
+HI_INET6_ADDRSTRLEN	hiutil.h	30;"	d
+HI_INET_ADDRSTRLEN	hiutil.h	32;"	d
+HI_MAXHOSTNAMELEN	hiutil.h	36;"	d
+HI_OK	hiutil.h	8;"	d
+HI_UINT16_MAXLEN	hiutil.h	49;"	d
+HI_UINT32_MAXLEN	hiutil.h	50;"	d
+HI_UINT64_MAXLEN	hiutil.h	51;"	d
+HI_UINT8_MAXLEN	hiutil.h	48;"	d
+HI_UINTMAX_MAXLEN	hiutil.h	52;"	d
+HI_UNIX_ADDRSTRLEN	hiutil.h	33;"	d
+IP_PORT_SEPARATOR	hircluster.c	24;"	d	file:
+LF	hiutil.h	15;"	d
+MAX	hiutil.h	23;"	d
+MIN	hiutil.h	22;"	d
+NELEMS	hiutil.h	20;"	d
+NOT_REACHED	hiutil.h	231;"	d
+NOT_REACHED	hiutil.h	241;"	d
+NOT_REACHED	hiutil.h	247;"	d
+REDIS_BLOCK	hiredis.h	48;"	d
+REDIS_CLUSTER_SLOTS	hircluster.h	12;"	d
+REDIS_COMMAND_ASKING	hircluster.c	19;"	d	file:
+REDIS_COMMAND_CLUSTER_NODES	hircluster.c	16;"	d	file:
+REDIS_COMMAND_CLUSTER_SLOTS	hircluster.c	17;"	d	file:
+REDIS_COMMAND_PING	hircluster.c	20;"	d	file:
+REDIS_CONNECTED	hiredis.h	52;"	d
+REDIS_CONNECT_RETRIES	hiredis.h	80;"	d
+REDIS_CONN_TCP	hiredis.h	/^    REDIS_CONN_TCP,$/;"	e	enum:redisConnectionType
+REDIS_CONN_UNIX	hiredis.h	/^    REDIS_CONN_UNIX,$/;"	e	enum:redisConnectionType
+REDIS_DISCONNECTING	hiredis.h	58;"	d
+REDIS_ERR	read.h	37;"	d
+REDIS_ERROR_ASK	read.h	69;"	d
+REDIS_ERROR_CLUSTERDOWN	read.h	72;"	d
+REDIS_ERROR_CROSSSLOT	read.h	71;"	d
+REDIS_ERROR_MOVED	read.h	68;"	d
+REDIS_ERROR_TRYAGAIN	read.h	70;"	d
+REDIS_ERR_AUTH_FAIL	read.h	55;"	d
+REDIS_ERR_CLUSTER_TOO_MANY_REDIRECT	read.h	50;"	d
+REDIS_ERR_EOF	read.h	45;"	d
+REDIS_ERR_IO	read.h	44;"	d
+REDIS_ERR_OOM	read.h	47;"	d
+REDIS_ERR_OTHER	read.h	48;"	d
+REDIS_ERR_PROTOCOL	read.h	46;"	d
+REDIS_ERR_TIMEOUT	read.h	53;"	d
+REDIS_FREEING	hiredis.h	62;"	d
+REDIS_IN_CALLBACK	hiredis.h	65;"	d
+REDIS_KEEPALIVE_INTERVAL	hiredis.h	76;"	d
+REDIS_MONITORING	hiredis.h	71;"	d
+REDIS_OK	read.h	38;"	d
+REDIS_PROTOCOL_ASKING	hircluster.c	22;"	d	file:
+REDIS_READER_MAX_BUF	read.h	65;"	d
+REDIS_REPLY_ARRAY	read.h	59;"	d
+REDIS_REPLY_ERROR	read.h	63;"	d
+REDIS_REPLY_INTEGER	read.h	60;"	d
+REDIS_REPLY_NIL	read.h	61;"	d
+REDIS_REPLY_STATUS	read.h	62;"	d
+REDIS_REPLY_STRING	read.h	58;"	d
+REDIS_REUSEADDR	hiredis.h	74;"	d
+REDIS_ROLE_MASTER	hircluster.h	15;"	d
+REDIS_ROLE_NULL	hircluster.h	14;"	d
+REDIS_ROLE_SLAVE	hircluster.h	16;"	d
+REDIS_STATUS_OK	read.h	74;"	d
+REDIS_SUBSCRIBED	hiredis.h	68;"	d
+SDS_LLSTR_SIZE	sds.c	298;"	d	file:
+SDS_MAX_PREALLOC	sds.h	34;"	d
+SQUARE	hiutil.h	25;"	d
+STDDEV	hiutil.h	27;"	d
+VAR	hiutil.h	26;"	d
+_BSD_SOURCE	fmacros.h	6;"	d
+_DEFAULT_SOURCE	fmacros.h	8;"	d
+_EL_ADD_READ	async.c	44;"	d	file:
+_EL_ADD_WRITE	async.c	50;"	d	file:
+_EL_CLEANUP	async.c	56;"	d	file:
+_EL_DEL_READ	async.c	47;"	d	file:
+_EL_DEL_WRITE	async.c	53;"	d	file:
+_OSX	fmacros.h	20;"	d
+_POSIX_C_SOURCE	fmacros.h	12;"	d
+_WIN32_HELPER_INCLUDE	win32.h	2;"	d
+_XOPEN_SOURCE	fmacros.h	14;"	d
+_XOPEN_SOURCE	fmacros.h	16;"	d
+__ADLIST_H__	adlist.h	32;"	d
+__COMMAND_H_	command.h	2;"	d
+__DICT_H	dict.h	37;"	d
+__HIARRAY_H_	hiarray.h	2;"	d
+__HIRCLUSTER_H	hircluster.h	3;"	d
+__HIREDIS_ASYNC_H	async.h	33;"	d
+__HIREDIS_FMACRO_H	fmacros.h	2;"	d
+__HIREDIS_H	hiredis.h	35;"	d
+__HIREDIS_READ_H	read.h	34;"	d
+__HIUTIL_H_	hiutil.h	2;"	d
+__MAX_MSEC	net.c	179;"	d	file:
+__NET_H	net.h	36;"	d
+__SDS_H	sds.h	32;"	d
+__redisAppendCommand	hiredis.c	/^int __redisAppendCommand(redisContext *c, const char *cmd, size_t len) {$/;"	f
+__redisAsyncCommand	async.c	/^static int __redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *cmd, size_t len) {$/;"	f	file:
+__redisAsyncCopyError	async.c	/^static void __redisAsyncCopyError(redisAsyncContext *ac) {$/;"	f	file:
+__redisAsyncDisconnect	async.c	/^static void __redisAsyncDisconnect(redisAsyncContext *ac) {$/;"	f	file:
+__redisAsyncFree	async.c	/^static void __redisAsyncFree(redisAsyncContext *ac) {$/;"	f	file:
+__redisAsyncHandleConnect	async.c	/^static int __redisAsyncHandleConnect(redisAsyncContext *ac) {$/;"	f	file:
+__redisBlockForReply	hircluster.c	/^static void *__redisBlockForReply(redisContext *c) {$/;"	f	file:
+__redisBlockForReply	hiredis.c	/^static void *__redisBlockForReply(redisContext *c) {$/;"	f	file:
+__redisClusterAppendCommand	hircluster.c	/^static int __redisClusterAppendCommand(redisClusterContext *cc, $/;"	f	file:
+__redisClusterAsyncCopyError	hircluster.c	/^static void __redisClusterAsyncCopyError(redisClusterAsyncContext *acc) {$/;"	f	file:
+__redisClusterAsyncSetError	hircluster.c	/^static void __redisClusterAsyncSetError(redisClusterAsyncContext *acc, $/;"	f	file:
+__redisClusterGetReply	hircluster.c	/^static int __redisClusterGetReply(redisClusterContext *cc, int slot_num, void **reply)$/;"	f	file:
+__redisClusterSetError	hircluster.c	/^static void __redisClusterSetError(redisClusterContext *cc, int type, const char *str) {$/;"	f	file:
+__redisGetSubscribeCallback	async.c	/^static int __redisGetSubscribeCallback(redisAsyncContext *ac, redisReply *reply, redisCallback *dstcb) {$/;"	f	file:
+__redisPushCallback	async.c	/^static int __redisPushCallback(redisCallbackList *list, redisCallback *source) {$/;"	f	file:
+__redisReaderSetError	read.c	/^static void __redisReaderSetError(redisReader *r, int type, const char *str) {$/;"	f	file:
+__redisReaderSetErrorOOM	read.c	/^static void __redisReaderSetErrorOOM(redisReader *r) {$/;"	f	file:
+__redisReaderSetErrorProtocolByte	read.c	/^static void __redisReaderSetErrorProtocolByte(redisReader *r, char byte) {$/;"	f	file:
+__redisRunCallback	async.c	/^static void __redisRunCallback(redisAsyncContext *ac, redisCallback *cb, redisReply *reply) {$/;"	f	file:
+__redisSetError	hiredis.c	/^void __redisSetError(redisContext *c, int type, const char *str) {$/;"	f
+__redisSetErrorFromErrno	net.c	/^static void __redisSetErrorFromErrno(redisContext *c, int type, const char *prefix) {$/;"	f	file:
+__redisShiftCallback	async.c	/^static int __redisShiftCallback(redisCallbackList *list, redisCallback *target) {$/;"	f	file:
+__redis_strerror_r	hiredis.h	87;"	d
+__redis_strerror_r	hiredis.h	93;"	d
+_dictClear	dict.c	/^static int _dictClear(dict *ht) {$/;"	f	file:
+_dictExpandIfNeeded	dict.c	/^static int _dictExpandIfNeeded(dict *ht) {$/;"	f	file:
+_dictInit	dict.c	/^static int _dictInit(dict *ht, dictType *type, void *privDataPtr) {$/;"	f	file:
+_dictKeyIndex	dict.c	/^static int _dictKeyIndex(dict *ht, const void *key) {$/;"	f	file:
+_dictNextPower	dict.c	/^static unsigned long _dictNextPower(unsigned long size) {$/;"	f	file:
+_dictReset	dict.c	/^static void _dictReset(dict *ht) {$/;"	f	file:
+_hi_alloc	hiutil.c	/^_hi_alloc(size_t size, const char *name, int line)$/;"	f
+_hi_atoi	hiutil.c	/^_hi_atoi(uint8_t *line, size_t n)$/;"	f
+_hi_calloc	hiutil.c	/^_hi_calloc(size_t nmemb, size_t size, const char *name, int line)$/;"	f
+_hi_free	hiutil.c	/^_hi_free(void *ptr, const char *name, int line)$/;"	f
+_hi_itoa	hiutil.c	/^_hi_itoa(uint8_t *s, int num)$/;"	f
+_hi_realloc	hiutil.c	/^_hi_realloc(void *ptr, size_t size, const char *name, int line)$/;"	f
+_hi_recvn	hiutil.c	/^_hi_recvn(int sd, void *vptr, size_t n)$/;"	f
+_hi_sendn	hiutil.c	/^_hi_sendn(int sd, const void *vptr, size_t n)$/;"	f
+_hi_zalloc	hiutil.c	/^_hi_zalloc(size_t size, const char *name, int line)$/;"	f
+_redisClusterConnect	hircluster.c	/^static redisClusterContext *_redisClusterConnect(redisClusterContext *cc, const char *addrs) {$/;"	f	file:
+_redisClusterConnect2	hircluster.c	/^static int _redisClusterConnect2(redisClusterContext *cc)$/;"	f	file:
+_redisContextConnectTcp	net.c	/^static int _redisContextConnectTcp(redisContext *c, const char *addr, int port,$/;"	f	file:
+_scnprintf	hiutil.c	/^_scnprintf(char *buf, size_t size, const char *fmt, ...)$/;"	f
+_uint_len	hiutil.c	/^int _uint_len(uint32_t num)$/;"	f
+_vscnprintf	hiutil.c	/^_vscnprintf(char *buf, size_t size, const char *fmt, va_list args)$/;"	f
+acc	hircluster.c	/^    redisClusterAsyncContext *acc;$/;"	m	struct:cluster_async_data	file:
+acon	hircluster.h	/^    redisAsyncContext *acon;$/;"	m	struct:cluster_node
+actx_get_after_update_route_by_slot	hircluster.c	/^static redisAsyncContext *actx_get_after_update_route_by_slot($/;"	f	file:
+actx_get_by_node	hircluster.c	/^redisAsyncContext * actx_get_by_node(redisClusterAsyncContext *acc, $/;"	f
+adapter	hircluster.h	/^    void *adapter;$/;"	m	struct:redisClusterAsyncContext
+adapterAttachFn	hircluster.h	/^typedef int (adapterAttachFn)(redisAsyncContext*, void*);$/;"	t
+addRead	async.h	/^        void (*addRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1
+addWrite	async.h	/^        void (*addWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1
+addr	hircluster.h	/^    sds addr;$/;"	m	struct:cluster_node
+attach_fn	hircluster.h	/^    adapterAttachFn *attach_fn;$/;"	m	struct:redisClusterAsyncContext
+auth_connect	hircluster.c	/^static int auth_connect(redisClusterContext *cc, redisContext *c)$/;"	f	file:
+buf	read.h	/^    char *buf; \/* Read buffer *\/$/;"	m	struct:redisReader
+buf	sds.h	/^    char buf[];$/;"	m	struct:sdshdr
+bulklen	hiredis.c	/^static size_t bulklen(size_t len) {$/;"	f	file:
+c	async.h	/^    redisContext c;$/;"	m	struct:redisAsyncContext
+c99_snprintf	win32.h	/^__inline int c99_snprintf(char* str, size_t size, const char* format, ...)$/;"	f
+c99_vsnprintf	win32.h	/^__inline int c99_vsnprintf(char* str, size_t size, const char* format, va_list ap)$/;"	f
+callback	hircluster.c	/^    redisClusterCallbackFn *callback;$/;"	m	struct:cluster_async_data	file:
+callbackDict	async.c	/^static dictType callbackDict = {$/;"	v	file:
+callbackHash	async.c	/^static unsigned int callbackHash(const void *key) {$/;"	f	file:
+callbackKeyCompare	async.c	/^static int callbackKeyCompare(void *privdata, const void *key1, const void *key2) {$/;"	f	file:
+callbackKeyDestructor	async.c	/^static void callbackKeyDestructor(void *privdata, void *key) {$/;"	f	file:
+callbackValDestructor	async.c	/^static void callbackValDestructor(void *privdata, void *val) {$/;"	f	file:
+callbackValDup	async.c	/^static void *callbackValDup(void *privdata, const void *src) {$/;"	f	file:
+cc	hircluster.h	/^    redisClusterContext *cc;$/;"	m	struct:redisClusterAsyncContext
+channels	async.h	/^        struct dict *channels;$/;"	m	struct:redisAsyncContext::__anon2	typeref:struct:redisAsyncContext::__anon2::dict
+chrtos	read.c	/^static size_t chrtos(char *buf, size_t size, char byte) {$/;"	f	file:
+cleanup	async.h	/^        void (*cleanup)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1
+clen	command.h	/^    uint32_t             clen;            \/* command length *\/$/;"	m	struct:cmd
+clusterNodesDictType	hircluster.c	/^dictType clusterNodesDictType = {$/;"	v
+clusterNodesRefDictType	hircluster.c	/^dictType clusterNodesRefDictType = {$/;"	v
+cluster_async_data	hircluster.c	/^typedef struct cluster_async_data$/;"	s	file:
+cluster_async_data	hircluster.c	/^}cluster_async_data;$/;"	t	typeref:struct:cluster_async_data	file:
+cluster_async_data_free	hircluster.c	/^static void cluster_async_data_free(cluster_async_data *cad)$/;"	f	file:
+cluster_async_data_get	hircluster.c	/^static cluster_async_data *cluster_async_data_get(void)$/;"	f	file:
+cluster_config_get	hircluster.c	/^static char * cluster_config_get(redisClusterContext *cc, $/;"	f	file:
+cluster_master_slave_mapping_with_name	hircluster.c	/^cluster_master_slave_mapping_with_name(redisClusterContext *cc,$/;"	f	file:
+cluster_node	hircluster.h	/^typedef struct cluster_node$/;"	s
+cluster_node	hircluster.h	/^}cluster_node;$/;"	t	typeref:struct:cluster_node
+cluster_node_deinit	hircluster.c	/^static void cluster_node_deinit(cluster_node *node)$/;"	f	file:
+cluster_node_init	hircluster.c	/^static int cluster_node_init(cluster_node *node)$/;"	f	file:
+cluster_nodes_swap_ctx	hircluster.c	/^static void cluster_nodes_swap_ctx(dict *nodes_f, dict *nodes_t)$/;"	f	file:
+cluster_open_slot_create	hircluster.c	/^static copen_slot *cluster_open_slot_create(uint32_t slot_num, int migrate, $/;"	f	file:
+cluster_open_slot_destroy	hircluster.c	/^static void cluster_open_slot_destroy(copen_slot *oslot)$/;"	f	file:
+cluster_reply_error_type	hircluster.c	/^static int cluster_reply_error_type(redisReply *reply)$/;"	f	file:
+cluster_slot	hircluster.h	/^typedef struct cluster_slot$/;"	s
+cluster_slot	hircluster.h	/^}cluster_slot;$/;"	t	typeref:struct:cluster_slot
+cluster_slot_create	hircluster.c	/^static cluster_slot *cluster_slot_create(cluster_node *node)$/;"	f	file:
+cluster_slot_destroy	hircluster.c	/^static void cluster_slot_destroy(cluster_slot *slot)$/;"	f	file:
+cluster_slot_init	hircluster.c	/^static int cluster_slot_init(cluster_slot *slot, cluster_node *node)$/;"	f	file:
+cluster_slot_ref_node	hircluster.c	/^static int cluster_slot_ref_node(cluster_slot * slot, cluster_node *node)$/;"	f	file:
+cluster_slot_start_cmp	hircluster.c	/^cluster_slot_start_cmp(const void *t1, const void *t2)$/;"	f	file:
+cluster_update_route	hircluster.c	/^cluster_update_route(redisClusterContext *cc)$/;"	f
+cluster_update_route_by_addr	hircluster.c	/^cluster_update_route_by_addr(redisClusterContext *cc, $/;"	f	file:
+cluster_update_route_with_nodes_old	hircluster.c	/^cluster_update_route_with_nodes_old(redisClusterContext *cc, $/;"	f	file:
+cmd	command.h	/^    char                 *cmd;$/;"	m	struct:cmd
+cmd	command.h	/^struct cmd {$/;"	s
+cmd_id	command.c	/^static uint64_t cmd_id = 0;          \/* command id counter *\/$/;"	v	file:
+cmd_parse_result	command.h	/^typedef enum cmd_parse_result {$/;"	g
+cmd_parse_result_t	command.h	/^} cmd_parse_result_t;$/;"	t	typeref:enum:cmd_parse_result
+cmd_type	command.h	/^typedef enum cmd_type {$/;"	g
+cmd_type_t	command.h	/^} cmd_type_t;$/;"	t	typeref:enum:cmd_type
+command	hircluster.c	/^    struct cmd *command;$/;"	m	struct:cluster_async_data	typeref:struct:cluster_async_data::cmd	file:
+command_destroy	command.c	/^void command_destroy(struct cmd *command)$/;"	f
+command_format_by_slot	hircluster.c	/^static int command_format_by_slot(redisClusterContext *cc, $/;"	f	file:
+command_get	command.c	/^struct cmd *command_get()$/;"	f
+command_post_fragment	hircluster.c	/^static void *command_post_fragment(redisClusterContext *cc, $/;"	f	file:
+command_pre_fragment	hircluster.c	/^static int command_pre_fragment(redisClusterContext *cc, $/;"	f	file:
+con	hircluster.h	/^    redisContext *con;$/;"	m	struct:cluster_node
+connect_timeout	hircluster.h	/^    struct timeval *connect_timeout;$/;"	m	struct:redisClusterContext	typeref:struct:redisClusterContext::timeval
+connection_type	hircluster.h	/^    enum redisConnectionType connection_type;$/;"	m	struct:redisClusterContext	typeref:enum:redisClusterContext::redisConnectionType
+connection_type	hiredis.h	/^    enum redisConnectionType connection_type;$/;"	m	struct:redisContext	typeref:enum:redisContext::redisConnectionType
+copen_slot	hircluster.h	/^typedef struct copen_slot$/;"	s
+copen_slot	hircluster.h	/^}copen_slot;$/;"	t	typeref:struct:copen_slot
+countDigits	hiredis.c	/^static uint32_t countDigits(uint64_t v) {$/;"	f	file:
+crc16	crc16.c	/^uint16_t crc16(const char *buf, int len) {$/;"	f
+crc16tab	crc16.c	/^static const uint16_t crc16tab[256]= {$/;"	v	file:
+createArray	read.h	/^    void *(*createArray)(const redisReadTask*, int);$/;"	m	struct:redisReplyObjectFunctions
+createArrayObject	hiredis.c	/^static void *createArrayObject(const redisReadTask *task, int elements) {$/;"	f	file:
+createInteger	read.h	/^    void *(*createInteger)(const redisReadTask*, long long);$/;"	m	struct:redisReplyObjectFunctions
+createIntegerObject	hiredis.c	/^static void *createIntegerObject(const redisReadTask *task, long long value) {$/;"	f	file:
+createNil	read.h	/^    void *(*createNil)(const redisReadTask*);$/;"	m	struct:redisReplyObjectFunctions
+createNilObject	hiredis.c	/^static void *createNilObject(const redisReadTask *task) {$/;"	f	file:
+createReplyObject	hiredis.c	/^static redisReply *createReplyObject(int type) {$/;"	f	file:
+createString	read.h	/^    void *(*createString)(const redisReadTask*, char*, size_t);$/;"	m	struct:redisReplyObjectFunctions
+createStringObject	hiredis.c	/^static void *createStringObject(const redisReadTask *task, char *str, size_t len) {$/;"	f	file:
+ctx_get_by_node	hircluster.c	/^redisContext *ctx_get_by_node(redisClusterContext *cc, cluster_node *node)$/;"	f
+data	async.h	/^        void *data;$/;"	m	struct:redisAsyncContext::__anon1
+data	async.h	/^    void *data;$/;"	m	struct:redisAsyncContext
+data	hircluster.h	/^    void *data;     \/* Not used by hiredis *\/$/;"	m	struct:cluster_node
+data	hircluster.h	/^    void *data;$/;"	m	struct:redisClusterAsyncContext
+dataHandler	async.h	/^    void (*dataHandler)(struct redisAsyncContext* ac);$/;"	m	struct:redisAsyncContext
+defaultFunctions	hiredis.c	/^static redisReplyObjectFunctions defaultFunctions = {$/;"	v	file:
+delRead	async.h	/^        void (*delRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1
+delWrite	async.h	/^        void (*delWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1
+dict	dict.h	/^typedef struct dict {$/;"	s
+dict	dict.h	/^} dict;$/;"	t	typeref:struct:dict
+dictAdd	dict.c	/^static int dictAdd(dict *ht, void *key, void *val) {$/;"	f	file:
+dictClusterNodeDestructor	hircluster.c	/^void dictClusterNodeDestructor(void *privdata, void *val)$/;"	f
+dictCompareHashKeys	dict.h	101;"	d
+dictCreate	dict.c	/^static dict *dictCreate(dictType *type, void *privDataPtr) {$/;"	f	file:
+dictDelete	dict.c	/^static int dictDelete(dict *ht, const void *key) {$/;"	f	file:
+dictEntry	dict.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	dict.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictExpand	dict.c	/^static int dictExpand(dict *ht, unsigned long size) {$/;"	f	file:
+dictFind	dict.c	/^static dictEntry *dictFind(dict *ht, const void *key) {$/;"	f	file:
+dictFreeEntryKey	dict.h	90;"	d
+dictFreeEntryVal	dict.h	79;"	d
+dictGenHashFunction	dict.c	/^static unsigned int dictGenHashFunction(const unsigned char *buf, int len) {$/;"	f	file:
+dictGetEntryKey	dict.h	108;"	d
+dictGetEntryVal	dict.h	109;"	d
+dictGetIterator	dict.c	/^static dictIterator *dictGetIterator(dict *ht) {$/;"	f	file:
+dictHashKey	dict.h	106;"	d
+dictIterator	dict.h	/^typedef struct dictIterator {$/;"	s
+dictIterator	dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
+dictNext	dict.c	/^static dictEntry *dictNext(dictIterator *iter) {$/;"	f	file:
+dictRelease	dict.c	/^static void dictRelease(dict *ht) {$/;"	f	file:
+dictReleaseIterator	dict.c	/^static void dictReleaseIterator(dictIterator *iter) {$/;"	f	file:
+dictReplace	dict.c	/^static int dictReplace(dict *ht, void *key, void *val) {$/;"	f	file:
+dictSdsDestructor	hircluster.c	/^void dictSdsDestructor(void *privdata, void *val)$/;"	f
+dictSdsHash	hircluster.c	/^unsigned int dictSdsHash(const void *key) {$/;"	f
+dictSdsKeyCompare	hircluster.c	/^int dictSdsKeyCompare(void *privdata, const void *key1,$/;"	f
+dictSetHashKey	dict.h	94;"	d
+dictSetHashVal	dict.h	83;"	d
+dictSize	dict.h	111;"	d
+dictSlots	dict.h	110;"	d
+dictType	dict.h	/^typedef struct dictType {$/;"	s
+dictType	dict.h	/^} dictType;$/;"	t	typeref:struct:dictType
+direction	adlist.h	/^    int direction;$/;"	m	struct:listIter
+dup	adlist.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:hilist
+elem	hiarray.h	/^    void     *elem;  \/* element *\/$/;"	m	struct:hiarray
+element	hiredis.h	/^    struct redisReply **element; \/* elements vector for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	typeref:struct:redisReply::redisReply
+elements	hiredis.h	/^    size_t elements; \/* number of elements, for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply
+elements	read.h	/^    int elements; \/* number of elements in multibulk container *\/$/;"	m	struct:redisReadTask
+end	command.h	/^    char             *end;          \/* key end pos *\/$/;"	m	struct:keypos
+end	hircluster.h	/^    uint32_t end;$/;"	m	struct:cluster_slot
+entry	dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+err	async.h	/^    int err;$/;"	m	struct:redisAsyncContext
+err	hircluster.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisClusterContext
+err	hircluster.h	/^    int err;$/;"	m	struct:redisClusterAsyncContext
+err	hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisContext
+err	read.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisReader
+errstr	async.h	/^    char *errstr;$/;"	m	struct:redisAsyncContext
+errstr	command.h	/^    char                 *errstr;         \/* error info when the command parse failed *\/$/;"	m	struct:cmd
+errstr	hircluster.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisClusterAsyncContext
+errstr	hircluster.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisClusterContext
+errstr	hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisContext
+errstr	read.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisReader
+ev	async.h	/^    } ev;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon1
+failure_count	hircluster.h	/^    int failure_count;$/;"	m	struct:cluster_node
+fd	hiredis.h	/^    int fd;$/;"	m	struct:redisContext
+flags	hircluster.h	/^    int flags;$/;"	m	struct:redisClusterContext
+flags	hiredis.h	/^    int flags;$/;"	m	struct:redisContext
+fn	async.h	/^    redisCallbackFn *fn;$/;"	m	struct:redisCallback
+fn	read.h	/^    redisReplyObjectFunctions *fn;$/;"	m	struct:redisReader
+frag_seq	command.h	/^    struct cmd           **frag_seq;      \/* sequence of fragment command, map from keys to fragments*\/$/;"	m	struct:cmd	typeref:struct:cmd::cmd
+free	adlist.h	/^    void (*free)(void *ptr);$/;"	m	struct:hilist
+free	sds.h	/^    int free;$/;"	m	struct:sdshdr
+freeObject	read.h	/^    void (*freeObject)(void*);$/;"	m	struct:redisReplyObjectFunctions
+freeReplyObject	hiredis.c	/^void freeReplyObject(void *reply) {$/;"	f
+hashFunction	dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
+head	adlist.h	/^    listNode *head;$/;"	m	struct:hilist
+head	async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList
+hex_digit_to_int	sds.c	/^int hex_digit_to_int(char c) {$/;"	f
+hi_alloc	hiutil.h	162;"	d
+hi_assert	hiutil.c	/^hi_assert(const char *cond, const char *file, int line, int panic)$/;"	f
+hi_atoi	hiutil.h	128;"	d
+hi_calloc	hiutil.h	168;"	d
+hi_free	hiutil.h	174;"	d
+hi_get_rcvbuf	hiutil.c	/^hi_get_rcvbuf(int sd)$/;"	f
+hi_get_sndbuf	hiutil.c	/^hi_get_sndbuf(int sd)$/;"	f
+hi_get_soerror	hiutil.c	/^hi_get_soerror(int sd)$/;"	f
+hi_gethostname	hiutil.h	125;"	d
+hi_itoa	hiutil.h	130;"	d
+hi_msec_now	hiutil.c	/^hi_msec_now(void)$/;"	f
+hi_read	hiutil.h	203;"	d
+hi_readv	hiutil.h	206;"	d
+hi_realloc	hiutil.h	171;"	d
+hi_recvn	hiutil.h	196;"	d
+hi_sendn	hiutil.h	193;"	d
+hi_set_blocking	hiutil.c	/^hi_set_blocking(int sd)$/;"	f
+hi_set_linger	hiutil.c	/^hi_set_linger(int sd, int timeout)$/;"	f
+hi_set_nonblocking	hiutil.c	/^hi_set_nonblocking(int sd)$/;"	f
+hi_set_rcvbuf	hiutil.c	/^hi_set_rcvbuf(int sd, int size)$/;"	f
+hi_set_reuseaddr	hiutil.c	/^hi_set_reuseaddr(int sd)$/;"	f
+hi_set_sndbuf	hiutil.c	/^hi_set_sndbuf(int sd, int size)$/;"	f
+hi_set_tcpnodelay	hiutil.c	/^hi_set_tcpnodelay(int sd)$/;"	f
+hi_stacktrace	hiutil.c	/^hi_stacktrace(int skip_count)$/;"	f
+hi_stacktrace_fd	hiutil.c	/^hi_stacktrace_fd(int fd)$/;"	f
+hi_strndup	hiutil.h	186;"	d
+hi_usec_now	hiutil.c	/^hi_usec_now(void)$/;"	f
+hi_valid_port	hiutil.c	/^hi_valid_port(int n)$/;"	f
+hi_write	hiutil.h	209;"	d
+hi_writev	hiutil.h	212;"	d
+hi_zalloc	hiutil.h	165;"	d
+hiarray	hiarray.h	/^struct hiarray {$/;"	s
+hiarray_compare_t	hiarray.h	/^typedef int (*hiarray_compare_t)(const void *, const void *);$/;"	t
+hiarray_create	hiarray.c	/^hiarray_create(uint32_t n, size_t size)$/;"	f
+hiarray_deinit	hiarray.c	/^hiarray_deinit(struct hiarray *a)$/;"	f
+hiarray_destroy	hiarray.c	/^hiarray_destroy(struct hiarray *a)$/;"	f
+hiarray_each	hiarray.c	/^hiarray_each(struct hiarray *a, hiarray_each_t func, void *data)$/;"	f
+hiarray_each_t	hiarray.h	/^typedef int (*hiarray_each_t)(void *, void *);$/;"	t
+hiarray_get	hiarray.c	/^hiarray_get(struct hiarray *a, uint32_t idx)$/;"	f
+hiarray_idx	hiarray.c	/^hiarray_idx(struct hiarray *a, void *elem)$/;"	f
+hiarray_init	hiarray.c	/^hiarray_init(struct hiarray *a, uint32_t n, size_t size)$/;"	f
+hiarray_n	hiarray.h	/^hiarray_n(const struct hiarray *a)$/;"	f
+hiarray_null	hiarray.h	/^hiarray_null(struct hiarray *a)$/;"	f
+hiarray_pop	hiarray.c	/^hiarray_pop(struct hiarray *a)$/;"	f
+hiarray_push	hiarray.c	/^hiarray_push(struct hiarray *a)$/;"	f
+hiarray_set	hiarray.h	/^hiarray_set(struct hiarray *a, void *elem, size_t size, uint32_t nalloc)$/;"	f
+hiarray_sort	hiarray.c	/^hiarray_sort(struct hiarray *a, hiarray_compare_t compare)$/;"	f
+hiarray_swap	hiarray.c	/^hiarray_swap(struct hiarray *a, struct hiarray *b)$/;"	f
+hiarray_top	hiarray.c	/^hiarray_top(struct hiarray *a)$/;"	f
+hilist	adlist.h	/^typedef struct hilist {$/;"	s
+hilist	adlist.h	/^} hilist;$/;"	t	typeref:struct:hilist
+host	hircluster.h	/^    sds host;$/;"	m	struct:cluster_node
+host	hiredis.h	/^        char *host;$/;"	m	struct:redisContext::__anon3
+ht	dict.h	/^    dict *ht;$/;"	m	struct:dictIterator
+id	command.h	/^    uint64_t             id;              \/* command id *\/$/;"	m	struct:cmd
+idx	read.h	/^    int idx; \/* index in parent (array) object *\/$/;"	m	struct:redisReadTask
+importing	hircluster.h	/^    struct hiarray *importing;  \/* copen_slot[] *\/$/;"	m	struct:cluster_node	typeref:struct:cluster_node::hiarray
+index	dict.h	/^    int index;$/;"	m	struct:dictIterator
+inline	win32.h	6;"	d
+integer	hiredis.h	/^    long long integer; \/* The integer when type is REDIS_REPLY_INTEGER *\/$/;"	m	struct:redisReply
+invalid	async.h	/^        redisCallbackList invalid;$/;"	m	struct:redisAsyncContext::__anon2
+ip	hircluster.h	/^    sds ip;$/;"	m	struct:redisClusterContext
+is_hex_digit	sds.c	/^int is_hex_digit(char c) {$/;"	f
+key	dict.h	/^    void *key;$/;"	m	struct:dictEntry
+keyCompare	dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
+keyDestructor	dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
+keyDup	dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
+keyHashSlot	hircluster.c	/^static unsigned int keyHashSlot(char *key, int keylen) {$/;"	f	file:
+keypos	command.h	/^struct keypos {$/;"	s
+keys	command.h	/^    struct hiarray       *keys;           \/* array of keypos, for req *\/$/;"	m	struct:cmd	typeref:struct:cmd::hiarray
+len	adlist.h	/^    unsigned long len;$/;"	m	struct:hilist
+len	hiredis.h	/^    int len; \/* Length of string *\/$/;"	m	struct:redisReply
+len	read.h	/^    size_t len; \/* Buffer length *\/$/;"	m	struct:redisReader
+len	sds.h	/^    int len;$/;"	m	struct:sdshdr
+listAddNodeHead	adlist.c	/^hilist *listAddNodeHead(hilist *list, void *value)$/;"	f
+listAddNodeTail	adlist.c	/^hilist *listAddNodeTail(hilist *list, void *value)$/;"	f
+listClusterNodeDestructor	hircluster.c	/^void listClusterNodeDestructor(void *val)$/;"	f
+listClusterSlotDestructor	hircluster.c	/^void listClusterSlotDestructor(void *val)$/;"	f
+listCommandFree	hircluster.c	/^void listCommandFree(void *command)$/;"	f
+listCreate	adlist.c	/^hilist *listCreate(void)$/;"	f
+listDelNode	adlist.c	/^void listDelNode(hilist *list, listNode *node)$/;"	f
+listDup	adlist.c	/^hilist *listDup(hilist *orig)$/;"	f
+listFirst	adlist.h	58;"	d
+listGetDupMethod	adlist.h	68;"	d
+listGetFree	adlist.h	69;"	d
+listGetIterator	adlist.c	/^listIter *listGetIterator(hilist *list, int direction)$/;"	f
+listGetMatchMethod	adlist.h	70;"	d
+listIndex	adlist.c	/^listNode *listIndex(hilist *list, long index) {$/;"	f
+listInsertNode	adlist.c	/^hilist *listInsertNode(hilist *list, listNode *old_node, void *value, int after) {$/;"	f
+listIter	adlist.h	/^typedef struct listIter {$/;"	s
+listIter	adlist.h	/^} listIter;$/;"	t	typeref:struct:listIter
+listLast	adlist.h	59;"	d
+listLength	adlist.h	57;"	d
+listNext	adlist.c	/^listNode *listNext(listIter *iter)$/;"	f
+listNextNode	adlist.h	61;"	d
+listNode	adlist.h	/^typedef struct listNode {$/;"	s
+listNode	adlist.h	/^} listNode;$/;"	t	typeref:struct:listNode
+listNodeValue	adlist.h	62;"	d
+listPrevNode	adlist.h	60;"	d
+listRelease	adlist.c	/^void listRelease(hilist *list)$/;"	f
+listReleaseIterator	adlist.c	/^void listReleaseIterator(listIter *iter) {$/;"	f
+listRewind	adlist.c	/^void listRewind(hilist *list, listIter *li) {$/;"	f
+listRewindTail	adlist.c	/^void listRewindTail(hilist *list, listIter *li) {$/;"	f
+listRotate	adlist.c	/^void listRotate(hilist *list) {$/;"	f
+listSearchKey	adlist.c	/^listNode *listSearchKey(hilist *list, void *key)$/;"	f
+listSetDupMethod	adlist.h	64;"	d
+listSetFreeMethod	adlist.h	65;"	d
+listSetMatchMethod	adlist.h	66;"	d
+main	sds.c	/^int main(void) {$/;"	f
+match	adlist.h	/^    int (*match)(void *ptr, void *key);$/;"	m	struct:hilist
+max_redirect_count	hircluster.h	/^    int max_redirect_count;$/;"	m	struct:redisClusterContext
+maxbuf	read.h	/^    size_t maxbuf; \/* Max length of unused buffer *\/$/;"	m	struct:redisReader
+migrate	hircluster.h	/^    int migrate;        \/* migrating or importing? *\/$/;"	m	struct:copen_slot
+migrating	hircluster.h	/^    struct hiarray *migrating;  \/* copen_slot[] *\/$/;"	m	struct:cluster_node	typeref:struct:cluster_node::hiarray
+moveToNextTask	read.c	/^static void moveToNextTask(redisReader *r) {$/;"	f	file:
+myself	hircluster.h	/^    uint8_t myself;   \/* myself ? *\/$/;"	m	struct:cluster_node
+nalloc	hiarray.h	/^    uint32_t nalloc; \/* # allocated element *\/$/;"	m	struct:hiarray
+name	hircluster.h	/^    sds name;$/;"	m	struct:cluster_node
+narg	command.h	/^    uint32_t             narg;            \/* # arguments (redis) *\/$/;"	m	struct:cmd
+narg_end	command.h	/^    char                 *narg_end;       \/* narg end (redis) *\/$/;"	m	struct:cmd
+narg_start	command.h	/^    char                 *narg_start;     \/* narg start (redis) *\/$/;"	m	struct:cmd
+need_update_route	hircluster.h	/^    int need_update_route;$/;"	m	struct:redisClusterContext
+nelem	hiarray.h	/^    uint32_t nelem;  \/* # element *\/$/;"	m	struct:hiarray
+next	adlist.h	/^    listNode *next;$/;"	m	struct:listIter
+next	adlist.h	/^    struct listNode *next;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
+next	async.h	/^    struct redisCallback *next; \/* simple singly linked list *\/$/;"	m	struct:redisCallback	typeref:struct:redisCallback::redisCallback
+next	dict.h	/^    struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
+nextArgument	async.c	/^static const char *nextArgument(const char *start, const char **str, size_t *len) {$/;"	f	file:
+nextEntry	dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+node	hircluster.h	/^    cluster_node *node; \/* master that this slot belong to *\/$/;"	m	struct:copen_slot
+node	hircluster.h	/^    cluster_node *node; \/* master that this slot region belong to *\/$/;"	m	struct:cluster_slot
+node_get_by_ask_error_reply	hircluster.c	/^static cluster_node *node_get_by_ask_error_reply($/;"	f	file:
+node_get_by_slot	hircluster.c	/^static cluster_node *node_get_by_slot(redisClusterContext *cc, uint32_t slot_num)$/;"	f	file:
+node_get_by_table	hircluster.c	/^static cluster_node *node_get_by_table(redisClusterContext *cc, uint32_t slot_num)$/;"	f	file:
+node_get_witch_connected	hircluster.c	/^static cluster_node *node_get_witch_connected(redisClusterContext *cc)$/;"	f	file:
+node_get_with_nodes	hircluster.c	/^static cluster_node *node_get_with_nodes($/;"	f	file:
+node_get_with_slots	hircluster.c	/^static cluster_node *node_get_with_slots($/;"	f	file:
+nodes	hircluster.h	/^    struct dict *nodes;$/;"	m	struct:redisClusterContext	typeref:struct:redisClusterContext::dict
+noforward	command.h	/^    unsigned             noforward:1;     \/* not need forward (example: ping) *\/$/;"	m	struct:cmd
+null_hiarray	hiarray.h	16;"	d
+obj	read.h	/^    void *obj; \/* holds user-generated value for a read task *\/$/;"	m	struct:redisReadTask
+obuf	hiredis.h	/^    char *obuf; \/* Write buffer *\/$/;"	m	struct:redisContext
+onConnect	async.h	/^    redisConnectCallback *onConnect;$/;"	m	struct:redisAsyncContext
+onConnect	hircluster.h	/^    redisConnectCallback *onConnect;$/;"	m	struct:redisClusterAsyncContext
+onDisconnect	async.h	/^    redisDisconnectCallback *onDisconnect;$/;"	m	struct:redisAsyncContext
+onDisconnect	hircluster.h	/^    redisDisconnectCallback *onDisconnect;$/;"	m	struct:redisClusterAsyncContext
+parent	read.h	/^    struct redisReadTask *parent; \/* parent task *\/$/;"	m	struct:redisReadTask	typeref:struct:redisReadTask::redisReadTask
+parse_cluster_nodes	hircluster.c	/^parse_cluster_nodes(redisClusterContext *cc, $/;"	f
+parse_cluster_slots	hircluster.c	/^parse_cluster_slots(redisClusterContext *cc,$/;"	f
+passwd	hircluster.h	/^    sds passwd;$/;"	m	struct:redisClusterContext
+path	hiredis.h	/^        char *path;$/;"	m	struct:redisContext::__anon4
+patterns	async.h	/^        struct dict *patterns;$/;"	m	struct:redisAsyncContext::__anon2	typeref:struct:redisAsyncContext::__anon2::dict
+port	hircluster.h	/^    int port;$/;"	m	struct:cluster_node
+port	hircluster.h	/^    int port;$/;"	m	struct:redisClusterContext
+port	hiredis.h	/^        int port;$/;"	m	struct:redisContext::__anon3
+pos	read.h	/^    size_t pos; \/* Buffer cursor *\/$/;"	m	struct:redisReader
+prev	adlist.h	/^    struct listNode *prev;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
+print_cluster_node_list	hircluster.c	/^static void print_cluster_node_list(redisClusterContext *cc)$/;"	f	file:
+print_string_with_length	hiutil.c	/^void print_string_with_length(char *s, size_t len)$/;"	f
+print_string_with_length_fix_CRLF	hiutil.c	/^void print_string_with_length_fix_CRLF(char *s, size_t len)$/;"	f
+privdata	async.h	/^    void *privdata;$/;"	m	struct:redisCallback
+privdata	dict.h	/^    void *privdata;$/;"	m	struct:dict
+privdata	hircluster.c	/^    void *privdata;$/;"	m	struct:cluster_async_data	file:
+privdata	read.h	/^    void *privdata; \/* user-settable arbitrary field *\/$/;"	m	struct:redisReadTask
+privdata	read.h	/^    void *privdata;$/;"	m	struct:redisReader
+processBulkItem	read.c	/^static int processBulkItem(redisReader *r) {$/;"	f	file:
+processItem	read.c	/^static int processItem(redisReader *r) {$/;"	f	file:
+processLineItem	read.c	/^static int processLineItem(redisReader *r) {$/;"	f	file:
+processMultiBulkItem	read.c	/^static int processMultiBulkItem(redisReader *r) {$/;"	f	file:
+quit	command.h	/^    unsigned             quit:1;          \/* quit request? *\/$/;"	m	struct:cmd
+readBytes	read.c	/^static char *readBytes(redisReader *r, unsigned int bytes) {$/;"	f	file:
+readLine	read.c	/^static char *readLine(redisReader *r, int *_len) {$/;"	f	file:
+readLongLong	read.c	/^static long long readLongLong(char *s) {$/;"	f	file:
+reader	hiredis.h	/^    redisReader *reader; \/* Protocol reader *\/$/;"	m	struct:redisContext
+redisAppendCommand	hiredis.c	/^int redisAppendCommand(redisContext *c, const char *format, ...) {$/;"	f
+redisAppendCommandArgv	hiredis.c	/^int redisAppendCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisAppendFormattedCommand	hiredis.c	/^int redisAppendFormattedCommand(redisContext *c, const char *cmd, size_t len) {$/;"	f
+redisAsyncCommand	async.c	/^int redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, ...) {$/;"	f
+redisAsyncCommandArgv	async.c	/^int redisAsyncCommandArgv(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisAsyncConnect	async.c	/^redisAsyncContext *redisAsyncConnect(const char *ip, int port) {$/;"	f
+redisAsyncConnectBind	async.c	/^redisAsyncContext *redisAsyncConnectBind(const char *ip, int port,$/;"	f
+redisAsyncConnectBindWithReuse	async.c	/^redisAsyncContext *redisAsyncConnectBindWithReuse(const char *ip, int port,$/;"	f
+redisAsyncConnectUnix	async.c	/^redisAsyncContext *redisAsyncConnectUnix(const char *path) {$/;"	f
+redisAsyncContext	async.h	/^typedef struct redisAsyncContext {$/;"	s
+redisAsyncContext	async.h	/^} redisAsyncContext;$/;"	t	typeref:struct:redisAsyncContext
+redisAsyncDisconnect	async.c	/^void redisAsyncDisconnect(redisAsyncContext *ac) {$/;"	f
+redisAsyncFormattedCommand	async.c	/^int redisAsyncFormattedCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *cmd, size_t len) {$/;"	f
+redisAsyncFree	async.c	/^void redisAsyncFree(redisAsyncContext *ac) {$/;"	f
+redisAsyncHandleRead	async.c	/^void redisAsyncHandleRead(redisAsyncContext *ac) {$/;"	f
+redisAsyncHandleWrite	async.c	/^void redisAsyncHandleWrite(redisAsyncContext *ac) {$/;"	f
+redisAsyncInitialize	async.c	/^static redisAsyncContext *redisAsyncInitialize(redisContext *c) {$/;"	f	file:
+redisAsyncSetConnectCallback	async.c	/^int redisAsyncSetConnectCallback(redisAsyncContext *ac, redisConnectCallback *fn) {$/;"	f
+redisAsyncSetDisconnectCallback	async.c	/^int redisAsyncSetDisconnectCallback(redisAsyncContext *ac, redisDisconnectCallback *fn) {$/;"	f
+redisBufferRead	hiredis.c	/^int redisBufferRead(redisContext *c) {$/;"	f
+redisBufferWrite	hiredis.c	/^int redisBufferWrite(redisContext *c, int *done) {$/;"	f
+redisCLusterClearAll	hircluster.c	/^static int redisCLusterClearAll(redisClusterContext *cc)$/;"	f	file:
+redisCLusterSendAll	hircluster.c	/^static int redisCLusterSendAll(redisClusterContext *cc)$/;"	f	file:
+redisCallback	async.h	/^typedef struct redisCallback {$/;"	s
+redisCallback	async.h	/^} redisCallback;$/;"	t	typeref:struct:redisCallback
+redisCallbackFn	async.h	/^typedef void (redisCallbackFn)(struct redisAsyncContext*, void*, void*);$/;"	t
+redisCallbackList	async.h	/^typedef struct redisCallbackList {$/;"	s
+redisCallbackList	async.h	/^} redisCallbackList;$/;"	t	typeref:struct:redisCallbackList
+redisCheckSocketError	net.c	/^int redisCheckSocketError(redisContext *c) {$/;"	f
+redisClusterAppendCommand	hircluster.c	/^int redisClusterAppendCommand(redisClusterContext *cc, $/;"	f
+redisClusterAppendCommandArgv	hircluster.c	/^int redisClusterAppendCommandArgv(redisClusterContext *cc, $/;"	f
+redisClusterAppendFormattedCommand	hircluster.c	/^int redisClusterAppendFormattedCommand(redisClusterContext *cc, $/;"	f
+redisClusterAsyncCallback	hircluster.c	/^static void redisClusterAsyncCallback(redisAsyncContext *ac, void *r, void *privdata) {$/;"	f	file:
+redisClusterAsyncCommand	hircluster.c	/^int redisClusterAsyncCommand(redisClusterAsyncContext *acc, $/;"	f
+redisClusterAsyncCommandArgv	hircluster.c	/^int redisClusterAsyncCommandArgv(redisClusterAsyncContext *acc, $/;"	f
+redisClusterAsyncConnect	hircluster.c	/^redisClusterAsyncContext *redisClusterAsyncConnect(const char *addrs, int flags) {$/;"	f
+redisClusterAsyncContext	hircluster.h	/^typedef struct redisClusterAsyncContext {$/;"	s
+redisClusterAsyncContext	hircluster.h	/^} redisClusterAsyncContext;$/;"	t	typeref:struct:redisClusterAsyncContext
+redisClusterAsyncDisconnect	hircluster.c	/^void redisClusterAsyncDisconnect(redisClusterAsyncContext *acc) {$/;"	f
+redisClusterAsyncFormattedCommand	hircluster.c	/^int redisClusterAsyncFormattedCommand(redisClusterAsyncContext *acc, $/;"	f
+redisClusterAsyncFree	hircluster.c	/^void redisClusterAsyncFree(redisClusterAsyncContext *acc)$/;"	f
+redisClusterAsyncInitialize	hircluster.c	/^static redisClusterAsyncContext *redisClusterAsyncInitialize(redisClusterContext *cc) {$/;"	f	file:
+redisClusterAsyncSetConnectCallback	hircluster.c	/^int redisClusterAsyncSetConnectCallback($/;"	f
+redisClusterAsyncSetDisconnectCallback	hircluster.c	/^int redisClusterAsyncSetDisconnectCallback($/;"	f
+redisClusterCallbackFn	hircluster.h	/^typedef void (redisClusterCallbackFn)(struct redisClusterAsyncContext*, void*, void*);$/;"	t
+redisClusterCommand	hircluster.c	/^void *redisClusterCommand(redisClusterContext *cc, const char *format, ...) {$/;"	f
+redisClusterCommandArgv	hircluster.c	/^void *redisClusterCommandArgv(redisClusterContext *cc, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisClusterConnect	hircluster.c	/^redisClusterContext *redisClusterConnect(const char *addrs, int flags)$/;"	f
+redisClusterConnect2	hircluster.c	/^int redisClusterConnect2(redisClusterContext *cc)$/;"	f
+redisClusterConnectNonBlock	hircluster.c	/^redisClusterContext *redisClusterConnectNonBlock(const char *addrs, int flags) {$/;"	f
+redisClusterConnectWithTimeout	hircluster.c	/^redisClusterContext *redisClusterConnectWithTimeout($/;"	f
+redisClusterContext	hircluster.h	/^typedef struct redisClusterContext {$/;"	s
+redisClusterContext	hircluster.h	/^} redisClusterContext;$/;"	t	typeref:struct:redisClusterContext
+redisClusterContextInit	hircluster.c	/^redisClusterContext *redisClusterContextInit(void) {$/;"	f
+redisClusterFormattedCommand	hircluster.c	/^void *redisClusterFormattedCommand(redisClusterContext *cc, char *cmd, int len) {$/;"	f
+redisClusterFree	hircluster.c	/^void redisClusterFree(redisClusterContext *cc) {$/;"	f
+redisClusterGetReply	hircluster.c	/^int redisClusterGetReply(redisClusterContext *cc, void **reply) {$/;"	f
+redisClusterReset	hircluster.c	/^void redisClusterReset(redisClusterContext *cc)$/;"	f
+redisClusterSetMaxRedirect	hircluster.c	/^void redisClusterSetMaxRedirect(redisClusterContext *cc, int max_redirect_count)$/;"	f
+redisClusterSetOptionAddNode	hircluster.c	/^int redisClusterSetOptionAddNode(redisClusterContext *cc, const char *addr)$/;"	f
+redisClusterSetOptionAddNodes	hircluster.c	/^int redisClusterSetOptionAddNodes(redisClusterContext *cc, const char *addrs)$/;"	f
+redisClusterSetOptionAuth	hircluster.c	/^int redisClusterSetOptionAuth(redisClusterContext *cc, const char *passwd)$/;"	f
+redisClusterSetOptionConnectBlock	hircluster.c	/^int redisClusterSetOptionConnectBlock(redisClusterContext *cc)$/;"	f
+redisClusterSetOptionConnectNonBlock	hircluster.c	/^int redisClusterSetOptionConnectNonBlock(redisClusterContext *cc)$/;"	f
+redisClusterSetOptionConnectTimeout	hircluster.c	/^int redisClusterSetOptionConnectTimeout(redisClusterContext *cc, const struct timeval tv)$/;"	f
+redisClusterSetOptionMaxRedirect	hircluster.c	/^int redisClusterSetOptionMaxRedirect(redisClusterContext *cc, int max_redirect_count)$/;"	f
+redisClusterSetOptionParseOpenSlots	hircluster.c	/^int redisClusterSetOptionParseOpenSlots(redisClusterContext *cc)$/;"	f
+redisClusterSetOptionParseSlaves	hircluster.c	/^int redisClusterSetOptionParseSlaves(redisClusterContext *cc)$/;"	f
+redisClusterSetOptionRouteUseSlots	hircluster.c	/^int redisClusterSetOptionRouteUseSlots(redisClusterContext *cc)$/;"	f
+redisClusterSetOptionTimeout	hircluster.c	/^int redisClusterSetOptionTimeout(redisClusterContext *cc, const struct timeval tv)$/;"	f
+redisClustervAppendCommand	hircluster.c	/^int redisClustervAppendCommand(redisClusterContext *cc, $/;"	f
+redisClustervAsyncCommand	hircluster.c	/^int redisClustervAsyncCommand(redisClusterAsyncContext *acc, $/;"	f
+redisClustervCommand	hircluster.c	/^void *redisClustervCommand(redisClusterContext *cc, const char *format, va_list ap) {$/;"	f
+redisCommand	hiredis.c	/^void *redisCommand(redisContext *c, const char *format, ...) {$/;"	f
+redisCommandArgv	hiredis.c	/^void *redisCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisConnect	hiredis.c	/^redisContext *redisConnect(const char *ip, int port) {$/;"	f
+redisConnectBindNonBlock	hiredis.c	/^redisContext *redisConnectBindNonBlock(const char *ip, int port,$/;"	f
+redisConnectBindNonBlockWithReuse	hiredis.c	/^redisContext *redisConnectBindNonBlockWithReuse(const char *ip, int port,$/;"	f
+redisConnectCallback	async.h	/^typedef void (redisConnectCallback)(const struct redisAsyncContext*, int status);$/;"	t
+redisConnectFd	hiredis.c	/^redisContext *redisConnectFd(int fd) {$/;"	f
+redisConnectNonBlock	hiredis.c	/^redisContext *redisConnectNonBlock(const char *ip, int port) {$/;"	f
+redisConnectUnix	hiredis.c	/^redisContext *redisConnectUnix(const char *path) {$/;"	f
+redisConnectUnixNonBlock	hiredis.c	/^redisContext *redisConnectUnixNonBlock(const char *path) {$/;"	f
+redisConnectUnixWithTimeout	hiredis.c	/^redisContext *redisConnectUnixWithTimeout(const char *path, const struct timeval tv) {$/;"	f
+redisConnectWithTimeout	hiredis.c	/^redisContext *redisConnectWithTimeout(const char *ip, int port, const struct timeval tv) {$/;"	f
+redisConnectionType	hiredis.h	/^enum redisConnectionType {$/;"	g
+redisContext	hiredis.h	/^typedef struct redisContext {$/;"	s
+redisContext	hiredis.h	/^} redisContext;$/;"	t	typeref:struct:redisContext
+redisContextCloseFd	net.c	/^static void redisContextCloseFd(redisContext *c) {$/;"	f	file:
+redisContextConnectBindTcp	net.c	/^int redisContextConnectBindTcp(redisContext *c, const char *addr, int port,$/;"	f
+redisContextConnectTcp	net.c	/^int redisContextConnectTcp(redisContext *c, const char *addr, int port,$/;"	f
+redisContextConnectUnix	net.c	/^int redisContextConnectUnix(redisContext *c, const char *path, const struct timeval *timeout) {$/;"	f
+redisContextInit	hiredis.c	/^static redisContext *redisContextInit(void) {$/;"	f	file:
+redisContextSetTimeout	net.c	/^int redisContextSetTimeout(redisContext *c, const struct timeval tv) {$/;"	f
+redisContextWaitReady	net.c	/^static int redisContextWaitReady(redisContext *c, const struct timeval *timeout) {$/;"	f	file:
+redisCreateSocket	net.c	/^static int redisCreateSocket(redisContext *c, int type) {$/;"	f	file:
+redisDisconnectCallback	async.h	/^typedef void (redisDisconnectCallback)(const struct redisAsyncContext*, int status);$/;"	t
+redisEnableKeepAlive	hiredis.c	/^int redisEnableKeepAlive(redisContext *c) {$/;"	f
+redisFormatCommand	hiredis.c	/^int redisFormatCommand(char **target, const char *format, ...) {$/;"	f
+redisFormatCommandArgv	hiredis.c	/^int redisFormatCommandArgv(char **target, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisFormatSdsCommandArgv	hiredis.c	/^int redisFormatSdsCommandArgv(sds *target, int argc, const char **argv,$/;"	f
+redisFree	hiredis.c	/^void redisFree(redisContext *c) {$/;"	f
+redisFreeCommand	hiredis.c	/^void redisFreeCommand(char *cmd) {$/;"	f
+redisFreeKeepFd	hiredis.c	/^int redisFreeKeepFd(redisContext *c) {$/;"	f
+redisFreeSdsCommand	hiredis.c	/^void redisFreeSdsCommand(sds cmd) {$/;"	f
+redisGetReply	hiredis.c	/^int redisGetReply(redisContext *c, void **reply) {$/;"	f
+redisGetReplyFromReader	hiredis.c	/^int redisGetReplyFromReader(redisContext *c, void **reply) {$/;"	f
+redisKeepAlive	net.c	/^int redisKeepAlive(redisContext *c, int interval) {$/;"	f
+redisProcessCallbacks	async.c	/^void redisProcessCallbacks(redisAsyncContext *ac) {$/;"	f
+redisReadTask	read.h	/^typedef struct redisReadTask {$/;"	s
+redisReadTask	read.h	/^} redisReadTask;$/;"	t	typeref:struct:redisReadTask
+redisReader	read.h	/^typedef struct redisReader {$/;"	s
+redisReader	read.h	/^} redisReader;$/;"	t	typeref:struct:redisReader
+redisReaderCreate	hiredis.c	/^redisReader *redisReaderCreate(void) {$/;"	f
+redisReaderCreateWithFunctions	read.c	/^redisReader *redisReaderCreateWithFunctions(redisReplyObjectFunctions *fn) {$/;"	f
+redisReaderFeed	read.c	/^int redisReaderFeed(redisReader *r, const char *buf, size_t len) {$/;"	f
+redisReaderFree	read.c	/^void redisReaderFree(redisReader *r) {$/;"	f
+redisReaderGetReply	read.c	/^int redisReaderGetReply(redisReader *r, void **reply) {$/;"	f
+redisReconnect	hiredis.c	/^int redisReconnect(redisContext *c) {$/;"	f
+redisReply	hiredis.h	/^typedef struct redisReply {$/;"	s
+redisReply	hiredis.h	/^} redisReply;$/;"	t	typeref:struct:redisReply
+redisReplyObjectFunctions	read.h	/^typedef struct redisReplyObjectFunctions {$/;"	s
+redisReplyObjectFunctions	read.h	/^} redisReplyObjectFunctions;$/;"	t	typeref:struct:redisReplyObjectFunctions
+redisReplyReaderCreate	read.h	122;"	d
+redisReplyReaderFeed	read.h	124;"	d
+redisReplyReaderFree	read.h	123;"	d
+redisReplyReaderGetError	read.h	128;"	d
+redisReplyReaderGetObject	read.h	127;"	d
+redisReplyReaderGetReply	read.h	125;"	d
+redisReplyReaderSetPrivdata	read.h	126;"	d
+redisSetBlocking	net.c	/^static int redisSetBlocking(redisContext *c, int blocking) {$/;"	f	file:
+redisSetReuseAddr	net.c	/^static int redisSetReuseAddr(redisContext *c) {$/;"	f	file:
+redisSetTcpNoDelay	net.c	/^static int redisSetTcpNoDelay(redisContext *c) {$/;"	f	file:
+redisSetTimeout	hiredis.c	/^int redisSetTimeout(redisContext *c, const struct timeval tv) {$/;"	f
+redis_arg0	command.c	/^redis_arg0(struct cmd *r)$/;"	f	file:
+redis_arg1	command.c	/^redis_arg1(struct cmd *r)$/;"	f	file:
+redis_arg2	command.c	/^redis_arg2(struct cmd *r)$/;"	f	file:
+redis_arg3	command.c	/^redis_arg3(struct cmd *r)$/;"	f	file:
+redis_argeval	command.c	/^redis_argeval(struct cmd *r)$/;"	f	file:
+redis_argkvx	command.c	/^redis_argkvx(struct cmd *r)$/;"	f	file:
+redis_argn	command.c	/^redis_argn(struct cmd *r)$/;"	f	file:
+redis_argx	command.c	/^redis_argx(struct cmd *r)$/;"	f	file:
+redis_argz	command.c	/^redis_argz(struct cmd *r)$/;"	f	file:
+redis_cluster_command_execute	hircluster.c	/^static void *redis_cluster_command_execute(redisClusterContext *cc, $/;"	f	file:
+redis_parse_cmd	command.c	/^redis_parse_cmd(struct cmd *r)$/;"	f
+redisvAppendCommand	hiredis.c	/^int redisvAppendCommand(redisContext *c, const char *format, va_list ap) {$/;"	f
+redisvAsyncCommand	async.c	/^int redisvAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, va_list ap) {$/;"	f
+redisvCommand	hiredis.c	/^void *redisvCommand(redisContext *c, const char *format, va_list ap) {$/;"	f
+redisvFormatCommand	hiredis.c	/^int redisvFormatCommand(char **target, const char *format, va_list ap) {$/;"	f
+remain_len	command.h	/^    uint32_t         remain_len;    \/* remain length after keypos->end for more key-value pairs in command, like mset *\/$/;"	m	struct:keypos
+remote_name	hircluster.h	/^    sds remote_name;    \/* name for the node that this slot migrating to\/importing from *\/$/;"	m	struct:copen_slot
+replies	async.h	/^    redisCallbackList replies;$/;"	m	struct:redisAsyncContext
+reply	command.h	/^    redisReply           *reply;$/;"	m	struct:cmd
+reply	read.h	/^    void *reply; \/* Temporary reply pointer *\/$/;"	m	struct:redisReader
+requests	hircluster.h	/^    struct hilist *requests;$/;"	m	struct:redisClusterContext	typeref:struct:redisClusterContext::hilist
+result	command.h	/^    cmd_parse_result_t   result;          \/* command parsing result *\/$/;"	m	struct:cmd
+retry_count	hircluster.c	/^    int retry_count;$/;"	m	struct:cluster_async_data	file:
+retry_count	hircluster.h	/^    int retry_count;$/;"	m	struct:redisClusterContext
+ridx	read.h	/^    int ridx; \/* Index of current read task *\/$/;"	m	struct:redisReader
+role	hircluster.h	/^    uint8_t role;$/;"	m	struct:cluster_node
+route_version	hircluster.h	/^    uint64_t route_version;$/;"	m	struct:redisClusterContext
+rstack	read.h	/^    redisReadTask rstack[9];$/;"	m	struct:redisReader
+rstatus_t	hiutil.h	/^typedef int rstatus_t; \/* return type *\/$/;"	t
+sds	sds.h	/^typedef char *sds;$/;"	t
+sdsAllocSize	sds.c	/^size_t sdsAllocSize(sds s) {$/;"	f
+sdsIncrLen	sds.c	/^void sdsIncrLen(sds s, int incr) {$/;"	f
+sdsMakeRoomFor	sds.c	/^sds sdsMakeRoomFor(sds s, size_t addlen) {$/;"	f
+sdsRemoveFreeSpace	sds.c	/^sds sdsRemoveFreeSpace(sds s) {$/;"	f
+sdsavail	sds.h	/^static inline size_t sdsavail(const sds s) {$/;"	f
+sdscat	sds.c	/^sds sdscat(sds s, const char *t) {$/;"	f
+sdscatfmt	sds.c	/^sds sdscatfmt(sds s, char const *fmt, ...) {$/;"	f
+sdscatlen	sds.c	/^sds sdscatlen(sds s, const void *t, size_t len) {$/;"	f
+sdscatprintf	sds.c	/^sds sdscatprintf(sds s, const char *fmt, ...) {$/;"	f
+sdscatrepr	sds.c	/^sds sdscatrepr(sds s, const char *p, size_t len) {$/;"	f
+sdscatsds	sds.c	/^sds sdscatsds(sds s, const sds t) {$/;"	f
+sdscatvprintf	sds.c	/^sds sdscatvprintf(sds s, const char *fmt, va_list ap) {$/;"	f
+sdsclear	sds.c	/^void sdsclear(sds s) {$/;"	f
+sdscmp	sds.c	/^int sdscmp(const sds s1, const sds s2) {$/;"	f
+sdscpy	sds.c	/^sds sdscpy(sds s, const char *t) {$/;"	f
+sdscpylen	sds.c	/^sds sdscpylen(sds s, const char *t, size_t len) {$/;"	f
+sdsdup	sds.c	/^sds sdsdup(const sds s) {$/;"	f
+sdsempty	sds.c	/^sds sdsempty(void) {$/;"	f
+sdsfree	sds.c	/^void sdsfree(sds s) {$/;"	f
+sdsfreesplitres	sds.c	/^void sdsfreesplitres(sds *tokens, int count) {$/;"	f
+sdsfromlonglong	sds.c	/^sds sdsfromlonglong(long long value) {$/;"	f
+sdsgrowzero	sds.c	/^sds sdsgrowzero(sds s, size_t len) {$/;"	f
+sdshdr	sds.h	/^struct sdshdr {$/;"	s
+sdsjoin	sds.c	/^sds sdsjoin(char **argv, int argc, char *sep, size_t seplen) {$/;"	f
+sdsjoinsds	sds.c	/^sds sdsjoinsds(sds *argv, int argc, const char *sep, size_t seplen) {$/;"	f
+sdslen	sds.h	/^static inline size_t sdslen(const sds s) {$/;"	f
+sdsll2str	sds.c	/^int sdsll2str(char *s, long long value) {$/;"	f
+sdsmapchars	sds.c	/^sds sdsmapchars(sds s, const char *from, const char *to, size_t setlen) {$/;"	f
+sdsnew	sds.c	/^sds sdsnew(const char *init) {$/;"	f
+sdsnewlen	sds.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f
+sdsrange	sds.c	/^void sdsrange(sds s, int start, int end) {$/;"	f
+sdssplitargs	sds.c	/^sds *sdssplitargs(const char *line, int *argc) {$/;"	f
+sdssplitlen	sds.c	/^sds *sdssplitlen(const char *s, int len, const char *sep, int seplen, int *count) {$/;"	f
+sdstolower	sds.c	/^void sdstolower(sds s) {$/;"	f
+sdstoupper	sds.c	/^void sdstoupper(sds s) {$/;"	f
+sdstrim	sds.c	/^void sdstrim(sds s, const char *cset) {$/;"	f
+sdsull2str	sds.c	/^int sdsull2str(char *s, unsigned long long v) {$/;"	f
+sdsupdatelen	sds.c	/^void sdsupdatelen(sds s) {$/;"	f
+seekNewline	read.c	/^static char *seekNewline(char *s, size_t len) {$/;"	f	file:
+size	dict.h	/^    unsigned long size;$/;"	m	struct:dict
+size	hiarray.h	/^    size_t   size;   \/* element size *\/$/;"	m	struct:hiarray
+sizemask	dict.h	/^    unsigned long sizemask;$/;"	m	struct:dict
+slaves	hircluster.h	/^    struct hilist *slaves;$/;"	m	struct:cluster_node	typeref:struct:cluster_node::hilist
+slot_get_by_command	hircluster.c	/^static int slot_get_by_command(redisClusterContext *cc, char *cmd, int len)$/;"	f	file:
+slot_num	command.h	/^    int                  slot_num;        \/* this command should send to witch slot? $/;"	m	struct:cmd
+slot_num	hircluster.h	/^    uint32_t slot_num;  \/* slot number *\/$/;"	m	struct:copen_slot
+slots	hircluster.h	/^    struct hiarray *slots;$/;"	m	struct:redisClusterContext	typeref:struct:redisClusterContext::hiarray
+slots	hircluster.h	/^    struct hilist *slots;$/;"	m	struct:cluster_node	typeref:struct:cluster_node::hilist
+snprintf	win32.h	14;"	d
+source_addr	hiredis.h	/^        char *source_addr;$/;"	m	struct:redisContext::__anon3
+start	command.h	/^    char             *start;        \/* key start pos *\/$/;"	m	struct:keypos
+start	hircluster.h	/^    uint32_t start;$/;"	m	struct:cluster_slot
+str	hiredis.h	/^    char *str; \/* Used for both REDIS_REPLY_ERROR and REDIS_REPLY_STRING *\/$/;"	m	struct:redisReply
+str10icmp	hiutil.h	91;"	d
+str11icmp	hiutil.h	95;"	d
+str12icmp	hiutil.h	99;"	d
+str13icmp	hiutil.h	103;"	d
+str14icmp	hiutil.h	107;"	d
+str15icmp	hiutil.h	111;"	d
+str16icmp	hiutil.h	115;"	d
+str3icmp	hiutil.h	65;"	d
+str4icmp	hiutil.h	70;"	d
+str5icmp	hiutil.h	73;"	d
+str6icmp	hiutil.h	76;"	d
+str7icmp	hiutil.h	79;"	d
+str8icmp	hiutil.h	83;"	d
+str9icmp	hiutil.h	87;"	d
+sub	async.h	/^    } sub;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon2
+sub_commands	command.h	/^    hilist                 *sub_commands;   \/* just for pipeline and multi-key commands *\/$/;"	m	struct:cmd
+table	dict.h	/^    dictEntry **table;$/;"	m	struct:dict
+table	hircluster.h	/^    cluster_node *table[REDIS_CLUSTER_SLOTS];$/;"	m	struct:redisClusterContext
+tail	adlist.h	/^    listNode *tail;$/;"	m	struct:hilist
+tail	async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList
+tcp	hiredis.h	/^    } tcp;$/;"	m	struct:redisContext	typeref:struct:redisContext::__anon3
+test_cluster_update_route	hircluster.c	/^int test_cluster_update_route(redisClusterContext *cc)$/;"	f
+timeout	hircluster.h	/^    struct timeval *timeout;    \/* receive and send timeout. *\/$/;"	m	struct:redisClusterContext	typeref:struct:redisClusterContext::timeval
+timeout	hiredis.h	/^    struct timeval *timeout;$/;"	m	struct:redisContext	typeref:struct:redisContext::timeval
+type	command.h	/^    cmd_type_t           type;            \/* command type *\/$/;"	m	struct:cmd
+type	dict.h	/^    dictType *type;$/;"	m	struct:dict
+type	hiredis.h	/^    int type; \/* REDIS_REPLY_* *\/$/;"	m	struct:redisReply
+type	read.h	/^    int type;$/;"	m	struct:redisReadTask
+uint_len	hiutil.h	133;"	d
+unix_sock	hiredis.h	/^    } unix_sock;$/;"	m	struct:redisContext	typeref:struct:redisContext::__anon4
+unlinkAsyncContextAndNode	hircluster.c	/^static void unlinkAsyncContextAndNode(redisAsyncContext* ac)$/;"	f	file:
+update_route_time	hircluster.h	/^    int64_t update_route_time;$/;"	m	struct:redisClusterContext
+used	dict.h	/^    unsigned long used;$/;"	m	struct:dict
+va_copy	win32.h	10;"	d
+val	dict.h	/^    void *val;$/;"	m	struct:dictEntry
+valDestructor	dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
+valDup	dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
+value	adlist.h	/^    void *value;$/;"	m	struct:listNode

@@ -1,0 +1,15 @@
+ [obstat_ini]
+   case_name                 = 'yuz_g-0-1'
+   redis_address             = '12.5.1.1:6391,12.5.1.1:6391'
+   redis_node                = '12.5.1.1'
+   redis_port                = 6391
+   obsstat_start_time        = '2000,01,05,00,00'
+   obsstat_end_time          = '2000,01,05,00,00'
+   obsstat_var_name          = 'u,ps'
+   draw_level                = 1
+   draw_single               = 0
+   draw_global               = 0
+   obs_open                  = 1
+   numblock                  = 1
+   path_nc                   = '/home/xuewei/lustre/yuz/dida2.0/new-fix/test_yuz/yuz_g-0-1/'
+   mpas_or_gmcore            = 1

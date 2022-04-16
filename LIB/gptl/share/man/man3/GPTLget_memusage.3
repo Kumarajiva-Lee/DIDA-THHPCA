@@ -1,0 +1,34 @@
+.TH GPTLget_memusage 3 "May, 2020" "GPTL"
+
+.SH NAME
+GPTLget_memusage \- Get current memory usage info (RSS)
+
+.SH SYNOPSIS
+.B C/C++ Interface:
+.nf
+#include <gptl.h>
+int GPTLget_memusage (float *rss);
+.fi
+
+.B Fortran Interface:
+.nf
+use gptl
+integer gptlget_memusage (real rss)
+.fi
+
+.SH DESCRIPTION
+returns current resident set size (RSS) of the process
+
+.SH ARGUMENTS
+.I *rss
+-- Resident set size (MB)
+
+.SH RESTRICTIONS
+None
+
+.SH RETURN VALUE
+On success, this function returns 0.
+On error, -1 is returned.
+
+.SH SEE ALSO
+.BR GPTLprint_memusage "(3)" 
