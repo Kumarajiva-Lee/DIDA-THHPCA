@@ -1,0 +1,454 @@
+[3598601 ## mn380: 15849 ## 2022-05-14/23:31:13] cnodenum= 42, job-resource-list: 886-919,922-927,0,921
+[3598601 ## mn380: 15849 ## 2022-05-14/23:31:13] nodelist[0-40]=886-919,922-927,0, mpenum=6, mpemap=0x3f, spemap=<FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF>
+[3598601 ## mn380: 15849 ## 2022-05-14/23:31:13] nodelist[41]=921, mpenum=2, mpemaplist=0X3, spemap=<0000000000000000000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF>
+[3598601 ## mn380: 15849 ## 2022-05-14/23:31:13] control node is: mn380.
+[3598601 ## mn380: 15849 ## 2022-05-14/23:31:13] sub control node number is 1, list: mn164.
+[3598601 ## vn000886: 32096 ## 2022-05-14/23:31:16] job's first task will run: /usr/bin/swrun -b 1 -K 4096 -s 15000 -c 0 -j 3598601 -F 0xFFFFFFFFFFFFFFFF -i ../../build/dida.exe namelists.input 
+[  ===> ][20220514/        ][M: COUPLER] Start DIDA Program!
+[  ===> ][20220514/        ][M: COUPLER] read namelist:namelists.input
+[  ===> ][20220514/        ][M: COUPLER] =========== total namelists ========
+[  ===> ][20220514/        ][M: COUPLER] case_name          :testcnn
+[  ===> ][20220514/        ][M: COUPLER] redis_address      :18.3.96.70:6390,18.3.96.70:6391
+[  ===> ][20220514/        ][M: COUPLER] atm_mpas_sceneid   :3
+[  ===> ][20220514/        ][M: COUPLER] num_lon            :360
+[  ===> ][20220514/        ][M: COUPLER] num_lat            :180
+[  ===> ][20220514/        ][M: COUPLER] num_lev            :32
+[  ===> ][20220514/        ][M: COUPLER] atm_mpas2atm_time  :1 days
+[  ===> ][20220514/        ][M: COUPLER] atm_phase_diff     :1800
+[  ===> ][20220514/        ][M: COUPLER] da_endnn_in_seconds:30
+[  ===> ][20220514/        ][M: COUPLER] da_start_time      :2019, 6, 7, 0, 0,
+[  ===> ][20220514/        ][M: COUPLER] end_time           :2019, 6, 7, 9, 0,
+[  ===> ][20220514/        ][M: COUPLER] da_in_seconds      :10800
+[  ===> ][20220514/        ][M: COUPLER] atm_ensemble_total :2
+[  ===> ][20220514/        ][M: COUPLER] atm_ensemble_group :1
+[  ===> ][20220514/        ][M: COUPLER] da_ensemble        :1
+[  ===> ][20220514/        ][M: COUPLER] da_var_name        :ps,u,v,pt
+[  ===> ][20220514/        ][M: COUPLER] da_asynchronous    :0
+[  ===> ][20220514/        ][M: COUPLER] da_mode            :0
+[  ===> ][20220514/        ][M: COUPLER] atm_group          :120
+[  ===> ][20220514/        ][M: COUPLER] atm_group_num      :1
+[  ===> ][20220514/        ][M: COUPLER] atm_stride         :248
+[  ===> ][20220514/        ][M: COUPLER] atm_root           :0
+[  ===> ][20220514/        ][M: COUPLER] da_group           :128
+[  ===> ][20220514/        ][M: COUPLER] da_group_num       :1
+[  ===> ][20220514/        ][M: COUPLER] da_stride          :248
+[  ===> ][20220514/        ][M: COUPLER] da_root            :120
+[  ===> ][20220514/        ][M: COUPLER] init_coupler_config done!
+[  ===> ][20220514/        ][M: COUPLER] =========== COUPLER INFO ========
+[34m==> [0mDA MODEL BEGIN!
+[  ===> ][20220514/        ][M: COUPLER] Total PROCS        :248
+[  ===> ][20220514/        ][M: COUPLER] ATM TOTAL PROCS    :120
+[  ===> ][20220514/        ][M: COUPLER] DA TOTAL PROCS     :128
+[  ===> ][20220514/        ][M: COUPLER] MCT ncomps         :2
+[  ===> ][20220514/        ][M: COUPLER] ATM comps          :1
+[  ===> ][20220514/        ][M: COUPLER] DA comps           :1
+[  ===> ][20220514/        ][M: COUPLER] init_coupler done!
+[34m==> [0mATM MODEL BEGIN!
+ Finish Init
+ =================== GMCORE Parameters ===================
+ case_name           = testcnn
+ num_lon             = 360
+ num_lat             = 180
+ num_lev             = 32
+ num_proc_total      = 120
+ num_proc_lon        = 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+ num_proc_lat        = 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+ blocked_comm        = false
+ partition_type      = irregular
+ minimal_halo        = false
+ hydrostatic         = true
+ nonhydrostatic      = false
+ vert_coord_scheme   = hybrid
+ vert_coord_template = wrf_l32
+ ptop                = 219.40
+ dt_in_seconds       = 360.
+ max_wave_speed      =    300.00000000000000     
+ max_cfl             =   0.50000000000000000     
+ filter_coef_a       =    1.2000000000000000     
+ filter_coef_b       =   0.40000000596046448     
+ filter_coef_c       =   0.40000000596046448     
+ pgf_scheme          = lin97
+ transport_scheme    = ffsl
+ limiter_type        = pd
+ ffsl_flux_type      = ppm
+ ke_scheme           = 2
+ ke_cell_wgt         = 0.375
+ pv_scheme           = 2
+ pv_pole_stokes      = true
+ upwind_order_pv     = 3
+ upwind_wgt_pv       = 1.00
+ zonal_tridiag_solver= spk
+ time_scheme         = wrfrk3
+ weno_order          = -1
+ upwind_order        = 3
+ upwind_wgt          = 1.00
+ upwind_wgt_pt       = 0.250
+ use_vor_damp        = true
+ vor_damp_cycles     = 1
+ vor_damp_coef2      =    5.0000002374872565E-004
+ vor_damp_lat0       =    50.000000000000000     
+ use_div_damp        = true
+ div_damp_cycles     = 5
+ div_damp_coef2      =    7.8125000000000000E-003
+ div_damp_top        = 3.000
+ div_damp_pole       =    0.0000000000000000     
+ div_damp_lat0       =    90.000000000000000     
+ use_smag_damp       = true
+ smag_damp_coef      = 0.20
+ print_interval      = 1 hours
+ history_interval    = 1 hours
+ output_nc           = false
+ output_Agrid        = false
+ member_inside       = 2
+ member_total        = 2
+ vector_outside      = 1
+ use_create_ensemble = false
+ initial_file_type   = time                          
+ initial_interval   = 1920
+ =========================================================
+[[32mNotice[0m]: Model top pressure is 219.40Pa.
+[[33mWarning[0m]: Parameter restart_interval is not set, so no restart file outputted.
+[[32mNotice[0m]: da_couper init
+[[32mNotice[0m]: segmap1 init
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: router init
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: Use /home/export/online1/mdt00/shisuan/swthhpca/DIDA-SHARE/share/geog/ETOPO1_Ice_g_gmt4.grd as topography.
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+[[32mNotice[0m]: da coupler init end
+[[32mNotice[0m]: cnn_init
+[[32mNotice[0m]: cnn range:1 45 1 45 1 16
+[[32mNotice[0m]: cnn range:1 45 1 45 17 32
+[[32mNotice[0m]: cnn range:1 45 1 45 33 48
+[[32mNotice[0m]: cnn range:1 45 1 45 49 64
+[[32mNotice[0m]: cnn range:1 45 46 90 1 16
+[[32mNotice[0m]: cnn range:1 45 46 90 17 32
+[[32mNotice[0m]: cnn range:316 360 136 180 33 48
+[[32mNotice[0m]: cnn range:316 360 136 180 49 64
+[[32mNotice[0m]: cnn range:1 45 46 90 49 64
+[[32mNotice[0m]: cnn range:1 45 91 135 1 16
+[[32mNotice[0m]: cnn range:1 45 91 135 17 32
+[[32mNotice[0m]: cnn range:1 45 91 135 33 48
+[[32mNotice[0m]: cnn range:1 45 91 135 49 64
+[[32mNotice[0m]: cnn range:1 45 136 180 1 16
+[[32mNotice[0m]: cnn range:1 45 136 180 17 32
+[[32mNotice[0m]: cnn range:1 45 136 180 33 48
+[[32mNotice[0m]: cnn range:1 45 136 180 49 64
+[[32mNotice[0m]: cnn range:46 90 1 45 1 16
+[[32mNotice[0m]: cnn range:46 90 1 45 17 32
+[[32mNotice[0m]: cnn range:46 90 1 45 33 48
+[[32mNotice[0m]: cnn range:46 90 1 45 49 64
+[[32mNotice[0m]: cnn range:46 90 46 90 1 16
+[[32mNotice[0m]: cnn range:46 90 46 90 17 32
+[[32mNotice[0m]: cnn range:46 90 46 90 33 48
+[[32mNotice[0m]: cnn range:46 90 46 90 49 64
+[[32mNotice[0m]: cnn range:46 90 91 135 1 16
+[[32mNotice[0m]: cnn range:46 90 91 135 17 32
+[[32mNotice[0m]: cnn range:46 90 91 135 33 48
+[[32mNotice[0m]: cnn range:46 90 91 135 49 64
+[[32mNotice[0m]: cnn range:46 90 136 180 1 16
+[[32mNotice[0m]: cnn range:46 90 136 180 17 32
+[[32mNotice[0m]: cnn range:46 90 136 180 33 48
+[[32mNotice[0m]: cnn range:46 90 136 180 49 64
+[[32mNotice[0m]: cnn range:91 135 1 45 1 16
+[[32mNotice[0m]: cnn range:91 135 1 45 17 32
+[[32mNotice[0m]: cnn range:91 135 1 45 33 48
+[[32mNotice[0m]: cnn range:91 135 1 45 49 64
+[[32mNotice[0m]: cnn range:91 135 46 90 1 16
+[[32mNotice[0m]: cnn range:91 135 46 90 17 32
+[[32mNotice[0m]: cnn range:91 135 46 90 33 48
+[[32mNotice[0m]: cnn range:91 135 46 90 49 64
+[[32mNotice[0m]: cnn range:91 135 91 135 1 16
+[[32mNotice[0m]: cnn range:91 135 91 135 17 32
+[[32mNotice[0m]: cnn range:91 135 91 135 33 48
+[[32mNotice[0m]: cnn range:91 135 91 135 49 64
+[[32mNotice[0m]: cnn range:91 135 136 180 1 16
+[[32mNotice[0m]: cnn range:91 135 136 180 17 32
+[[32mNotice[0m]: cnn range:91 135 136 180 33 48
+[[32mNotice[0m]: cnn range:91 135 136 180 49 64
+[[32mNotice[0m]: cnn range:136 180 1 45 1 16
+[[32mNotice[0m]: cnn range:136 180 1 45 17 32
+[[32mNotice[0m]: cnn range:136 180 1 45 33 48
+[[32mNotice[0m]: cnn range:136 180 1 45 49 64
+[[32mNotice[0m]: cnn range:136 180 46 90 1 16
+[[32mNotice[0m]: cnn range:136 180 46 90 17 32
+[[32mNotice[0m]: cnn range:136 180 46 90 33 48
+[[32mNotice[0m]: cnn range:136 180 46 90 49 64
+[[32mNotice[0m]: cnn range:136 180 91 135 1 16
+[[32mNotice[0m]: cnn range:136 180 91 135 17 32
+[[32mNotice[0m]: cnn range:136 180 91 135 33 48
+[[32mNotice[0m]: cnn range:136 180 91 135 49 64
+[[32mNotice[0m]: cnn range:136 180 136 180 1 16
+[[32mNotice[0m]: cnn range:136 180 136 180 17 32
+[[32mNotice[0m]: cnn range:136 180 136 180 33 48
+[[32mNotice[0m]: cnn range:136 180 136 180 49 64
+[[32mNotice[0m]: cnn range:181 225 1 45 1 16
+[[32mNotice[0m]: cnn range:181 225 1 45 17 32
+[[32mNotice[0m]: cnn range:181 225 1 45 33 48
+[[32mNotice[0m]: cnn range:181 225 1 45 49 64
+[[32mNotice[0m]: cnn range:181 225 46 90 1 16
+[[32mNotice[0m]: cnn range:181 225 46 90 17 32
+[[32mNotice[0m]: cnn range:181 225 46 90 33 48
+[[32mNotice[0m]: cnn range:181 225 46 90 49 64
+[[32mNotice[0m]: cnn range:181 225 91 135 1 16
+[[32mNotice[0m]: cnn range:181 225 91 135 17 32
+[[32mNotice[0m]: cnn range:181 225 91 135 33 48
+[[32mNotice[0m]: cnn range:181 225 91 135 49 64
+[[32mNotice[0m]: cnn range:181 225 136 180 1 16
+[[32mNotice[0m]: cnn range:181 225 136 180 17 32
+[[32mNotice[0m]: cnn range:181 225 136 180 33 48
+[[32mNotice[0m]: cnn range:181 225 136 180 49 64
+[[32mNotice[0m]: cnn range:226 270 1 45 1 16
+[[32mNotice[0m]: cnn range:226 270 1 45 17 32
+[[32mNotice[0m]: cnn range:226 270 1 45 33 48
+[[32mNotice[0m]: cnn range:226 270 1 45 49 64
+[[32mNotice[0m]: cnn range:226 270 46 90 1 16
+[[32mNotice[0m]: cnn range:226 270 46 90 17 32
+[[32mNotice[0m]: cnn range:226 270 46 90 33 48
+[[32mNotice[0m]: cnn range:226 270 46 90 49 64
+[[32mNotice[0m]: cnn range:226 270 91 135 1 16
+[[32mNotice[0m]: cnn range:226 270 91 135 17 32
+[[32mNotice[0m]: cnn range:226 270 91 135 33 48
+[[32mNotice[0m]: cnn range:226 270 91 135 49 64
+[[32mNotice[0m]: cnn range:226 270 136 180 1 16
+[[32mNotice[0m]: cnn range:226 270 136 180 17 32
+[[32mNotice[0m]: cnn range:226 270 136 180 33 48
+[[32mNotice[0m]: cnn range:226 270 136 180 49 64
+[[32mNotice[0m]: cnn range:271 315 1 45 1 16
+[[32mNotice[0m]: cnn range:271 315 1 45 17 32
+[[32mNotice[0m]: cnn range:271 315 1 45 33 48
+[[32mNotice[0m]: cnn range:271 315 1 45 49 64
+[[32mNotice[0m]: cnn range:271 315 46 90 1 16
+[[32mNotice[0m]: cnn range:271 315 46 90 17 32
+[[32mNotice[0m]: cnn range:271 315 46 90 33 48
+[[32mNotice[0m]: cnn range:271 315 46 90 49 64
+[[32mNotice[0m]: cnn range:271 315 91 135 1 16
+[[32mNotice[0m]: cnn range:271 315 91 135 17 32
+[[32mNotice[0m]: cnn range:271 315 91 135 33 48
+[[32mNotice[0m]: cnn range:271 315 91 135 49 64
+[[32mNotice[0m]: cnn range:271 315 136 180 1 16
+[[32mNotice[0m]: cnn range:271 315 136 180 17 32
+[[32mNotice[0m]: cnn range:271 315 136 180 33 48
+[[32mNotice[0m]: cnn range:271 315 136 180 49 64
+[[32mNotice[0m]: cnn range:316 360 1 45 1 16
+[[32mNotice[0m]: cnn range:316 360 1 45 17 32
+[[32mNotice[0m]: cnn range:316 360 1 45 33 48
+[[32mNotice[0m]: cnn range:316 360 1 45 49 64
+[[32mNotice[0m]: cnn range:316 360 46 90 1 16
+[[32mNotice[0m]: cnn range:316 360 46 90 17 32
+[[32mNotice[0m]: cnn range:316 360 46 90 33 48
+[[32mNotice[0m]: cnn range:316 360 46 90 49 64
+[[32mNotice[0m]: cnn range:316 360 91 135 1 16
+[[32mNotice[0m]: cnn range:316 360 91 135 17 32
+[[32mNotice[0m]: cnn range:316 360 91 135 33 48
+[[32mNotice[0m]: cnn range:316 360 91 135 49 64
+[[32mNotice[0m]: cnn range:316 360 136 180 1 16
+[[32mNotice[0m]: cnn range:316 360 136 180 17 32
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: cnn range:1 45 46 90 33 48
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+MCT::m_Router::initp_: GSMap indices not increasing...Will correct
+[[32mNotice[0m]: num_topo_lon = 21601, num_topo_lat = 10801
+[[32mNotice[0m]: Use MPAS /home/export/online1/mdt00/shisuan/swthhpca/DIDA-SHARE/share/inifile/mpas/360x180_newgrid/20190601/MPAS_360x180_2019-06-02_00.00.00.nc as background.
+MCT::m_Router::initp_: RGSMap indices not increasing...Will correct
+[[32mNotice[0m]: Regrid mean sea level pressure and calculate surface pressure based on pressure-height formula.
+[[32mNotice[0m]: Calculate pressure on each grid.
+[[32mNotice[0m]: Regrid temperature and calculate potential temperature.
+[[32mNotice[0m]: Regrid u wind component.
+[[32mNotice[0m]: Regrid v wind component.
+[[32mNotice[0m]: Use MPAS /home/export/online1/mdt00/shisuan/swthhpca/DIDA-SHARE/share/inifile/mpas/360x180_newgrid/20190601/MPAS_360x180_2019-06-03_08.00.00.nc as background.
+[[32mNotice[0m]: Regrid mean sea level pressure and calculate surface pressure based on pressure-height formula.
+[[32mNotice[0m]: Calculate pressure on each grid.
+[[32mNotice[0m]: Regrid temperature and calculate potential temperature.
+[[32mNotice[0m]: Regrid u wind component.
+[[32mNotice[0m]: Regrid v wind component.
+[[32mNotice[0m]: Begin atm_run
+[34m==> [0m2019-06-06T23:30:00Z 0.501662838518679E+20 0.128232243389683E+26 36153.6142892061
+[[32mNotice[0m]: Time cost 9.14869 seconds.
+[34m==> [0m2019-06-07T00:30:00Z 0.501662838518680E+20 0.128231184404335E+26 36064.7282765020
+[[32mNotice[0m]: cnn_init_end
+[[32mNotice[0m]: da_time 3
+[[32mNotice[0m]: read mean & std of cnn
+[[32mNotice[0m]: Time cost 9.15707 seconds.
+[34m==> [0m2019-06-07T01:30:00Z 0.501662838518680E+20 0.128231046728509E+26 36109.3664338768
+[[32mNotice[0m]: Time cost 9.13707 seconds.
+[34m==> [0m2019-06-07T02:30:00Z 0.501662838518679E+20 0.128230908395597E+26 36131.9310157834
+           4 ps   u    v    pt              1          32          32          32
+[[32mNotice[0m]: finish read std & mean
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: before cnn_predict 0
+[[32mNotice[0m]: after cnn_predict 0
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Time cost 130.532 seconds.
+[34m==> [0m2019-06-07T03:30:00Z 0.501611482767566E+20 0.128198335392149E+26 35426.6011203112
+[[32mNotice[0m]: Time cost 9.15055 seconds.
+[34m==> [0m2019-06-07T04:30:00Z 0.501611482767566E+20 0.128198132256881E+26 35509.1518802014
+[[32mNotice[0m]: Time cost 9.15092 seconds.
+[34m==> [0m2019-06-07T05:30:00Z 0.501611482767566E+20 0.128197954696088E+26 35575.1317896610
+           4 ps   u    v    pt              1          32          32          32
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: before cnn_predict 0
+[[32mNotice[0m]: after cnn_predict 0
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Time cost 58.0446 seconds.
+[34m==> [0m2019-06-07T06:30:00Z 0.501458179698465E+20 0.128182518637110E+26 35441.3796577734
+[[32mNotice[0m]: Time cost 9.13379 seconds.
+[34m==> [0m2019-06-07T07:30:00Z 0.501458179698464E+20 0.128182332253452E+26 35553.3620775102
+[[32mNotice[0m]: Time cost 9.13965 seconds.
+[34m==> [0m2019-06-07T08:30:00Z 0.501458179698465E+20 0.128182163136246E+26 35632.9957127163
+           4 ps   u    v    pt              1          32          32          32
+[[32mNotice[0m]: send to cnn
+[[32mNotice[0m]: before cnn_predict 0
+[[32mNotice[0m]: after cnn_predict 0
+[[32mNotice[0m]: recv from cnn
+[[32mNotice[0m]: Letkf run start!
+[[32mNotice[0m]: Obslist generation & communication done!
+[[32mNotice[0m]: Letkf run done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: da_output done!
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[[32mNotice[0m]: Out da run
+[34m==> [0mDA MODEL END!
+[[32mNotice[0m]: Finish atm_run
+[[32mNotice[0m]: Atm_run time cost 307.138 seconds.
+[[32mNotice[0m]: DA Cycle time cost 76.31771 seconds.
+[[32mNotice[0m]: DA Cycle ATM cost 27.42350 seconds.
+[[32mNotice[0m]: DA Cycle DA cost 48.89421 seconds.
+[[32mNotice[0m]: Finish atm_final
+[34m==> [0mATM MODEL END!
+[  ===> ][20220514/        ][M: COUPLER] DIDA End!
+[3598601 ## mn380: 15849 ## 2022-05-14/23:37:47] job_finished. use-time: 392.643351 (secs)
