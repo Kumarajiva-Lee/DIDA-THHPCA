@@ -1,0 +1,30 @@
+文件说明
+define_case:管理定义试验
+   baseline_namelist:先通过scene.ini定义场景，再通过gen_scene.sh生产8个场景对应的标准namelist，namelists.input0为gmcore场景。
+
+case_group.ini: 定义每个组对应的试验，暂时不需要做的试验注释掉即可。
+
+batch_case_update.sh:修改路径
+   CREATE：创建试验文件夹
+   COMPILE：编译
+   NAMELIST：根据定义的试验修改namelist
+   OBSTAT：根据定义的试验修改诊断参数
+run-envir-corun.sh:提交试验，并发诊断
+
+
+
+使用方法：
+vi case_group.ini
+   例：1-3_3_group = 'da_loc_distance:da_obs_dense;1-3-1_3_8:4;1-3-2_3_10:5'
+     组名_场景号_group =  参数1:参数2;试验名_场景号_参数值1:参数值2
+
+vi batch_case_update.sh
+   修改路径
+   mpas_or_gmcore= 0为mpas,1为gmcore
+   nocompile_or_compile= 0为不编译，1为编译（编译一次即可）
+
+sh batch_case_update.sh
+
+试验结果在$dida_dir/$create_name/$case_name中
+诊断结果在$dida_dir/$create_name/$case_name/pic中
+

@@ -1,0 +1,271 @@
+
+! =================================================================================== 
+! <<Automatically generated for Rose Fortran Separate Compilation, DO NOT MODIFY IT>> 
+! =================================================================================== 
+
+MODULE gptl
+! GPTL module file for user code. Parameter values match their counterparts
+! in gptl.h. This file also contains an interface block for parameter checking.
+! Also: Some F90-only subroutines after the interface block
+IMPLICIT NONE
+public 
+! User-accessible integers 
+INTEGER, PARAMETER, PUBLIC :: GPTLsync_mpi = 0
+INTEGER, PARAMETER, PUBLIC :: GPTLwall = 1
+INTEGER, PARAMETER, PUBLIC :: GPTLcpu = 2
+INTEGER, PARAMETER, PUBLIC :: GPTLabort_on_error = 3
+INTEGER, PARAMETER, PUBLIC :: GPTLoverhead = 4
+INTEGER, PARAMETER, PUBLIC :: GPTLdepthlimit = 5
+INTEGER, PARAMETER, PUBLIC :: GPTLverbose = 6
+INTEGER, PARAMETER, PUBLIC :: GPTLnarrowprint = 7
+INTEGER, PARAMETER, PUBLIC :: GPTLpercent = 9
+INTEGER, PARAMETER, PUBLIC :: GPTLpersec = 10
+INTEGER, PARAMETER, PUBLIC :: GPTLmultiplex = 11
+INTEGER, PARAMETER, PUBLIC :: GPTLdopr_preamble = 12
+INTEGER, PARAMETER, PUBLIC :: GPTLdopr_threadsort = 13
+INTEGER, PARAMETER, PUBLIC :: GPTLdopr_multparent = 14
+INTEGER, PARAMETER, PUBLIC :: GPTLdopr_collision = 15
+INTEGER, PARAMETER, PUBLIC :: GPTLdopr_memusage = 27
+INTEGER, PARAMETER, PUBLIC :: GPTLprint_method = 16
+INTEGER, PARAMETER, PUBLIC :: GPTLtablesize = 50
+INTEGER, PARAMETER, PUBLIC :: GPTLmaxthreads = 51
+INTEGER, PARAMETER, PUBLIC :: GPTL_IPC = 17
+INTEGER, PARAMETER, PUBLIC :: GPTL_CI = 18
+INTEGER, PARAMETER, PUBLIC :: GPTL_FPC = 19
+INTEGER, PARAMETER, PUBLIC :: GPTL_FPI = 20
+INTEGER, PARAMETER, PUBLIC :: GPTL_LSTPI = 21
+INTEGER, PARAMETER, PUBLIC :: GPTL_DCMRT = 22
+INTEGER, PARAMETER, PUBLIC :: GPTL_LSTPDCM = 23
+INTEGER, PARAMETER, PUBLIC :: GPTL_L2MRT = 24
+INTEGER, PARAMETER, PUBLIC :: GPTL_LSTPL2M = 25
+INTEGER, PARAMETER, PUBLIC :: GPTL_L3MRT = 26
+INTEGER, PARAMETER, PUBLIC :: GPTLgettimeofday = 1
+INTEGER, PARAMETER, PUBLIC :: GPTLnanotime = 2
+INTEGER, PARAMETER, PUBLIC :: GPTLmpiwtime = 4
+INTEGER, PARAMETER, PUBLIC :: GPTLclockgettime = 5
+INTEGER, PARAMETER, PUBLIC :: GPTLpapitime = 6
+INTEGER, PARAMETER, PUBLIC :: GPTLplacebo = 7
+INTEGER, PARAMETER, PUBLIC :: GPTLread_real_time = 3
+INTEGER, PARAMETER, PUBLIC :: GPTLfirst_parent = 1
+INTEGER, PARAMETER, PUBLIC :: GPTLlast_parent = 2
+INTEGER, PARAMETER, PUBLIC :: GPTLmost_frequent = 3
+INTEGER, PARAMETER, PUBLIC :: GPTLfull_tree = 4
+! Function prototypes
+INTERFACE 
+SUBROUTINE gptlprocess_namelist(filename,unitno,outret)
+CHARACTER(len=*) :: filename
+INTEGER :: unitno
+INTEGER :: outret
+END SUBROUTINE gptlprocess_namelist
+
+INTEGER FUNCTION gptlinitialize()
+END  FUNCTION gptlinitialize
+
+INTEGER FUNCTION gptlfinalize()
+END  FUNCTION gptlfinalize
+
+INTEGER FUNCTION gptlpr(procid)
+INTEGER :: procid
+END  FUNCTION gptlpr
+
+INTEGER FUNCTION gptlpr_file(file)
+CHARACTER(len=*) :: file
+END  FUNCTION gptlpr_file
+
+INTEGER FUNCTION gptlpr_summary(fcomm)
+INTEGER :: fcomm
+END  FUNCTION gptlpr_summary
+
+INTEGER FUNCTION gptlpr_summary_file(fcomm,name)
+INTEGER :: fcomm
+CHARACTER(len=*) :: name
+END  FUNCTION gptlpr_summary_file
+
+INTEGER FUNCTION gptlbarrier(fcomm,name)
+INTEGER :: fcomm
+CHARACTER(len=*) :: name
+END  FUNCTION gptlbarrier
+
+INTEGER FUNCTION gptlreset()
+END  FUNCTION gptlreset
+
+INTEGER FUNCTION gptlreset_timer(name)
+CHARACTER(len=*) :: name
+END  FUNCTION gptlreset_timer
+
+INTEGER FUNCTION gptlstamp(wall,usr,sys)
+REAL(kind=8) :: wall, usr, sys
+END  FUNCTION gptlstamp
+
+INTEGER FUNCTION gptlstart(name)
+CHARACTER(len=*) :: name
+END  FUNCTION gptlstart
+
+INTEGER FUNCTION gptlinit_handle(name,handle)
+CHARACTER(len=*) :: name
+INTEGER :: handle
+END  FUNCTION gptlinit_handle
+
+INTEGER FUNCTION gptlstart_handle(name,handle)
+CHARACTER(len=*) :: name
+INTEGER :: handle
+END  FUNCTION gptlstart_handle
+
+INTEGER FUNCTION gptlstop(name)
+CHARACTER(len=*) :: name
+END  FUNCTION gptlstop
+
+INTEGER FUNCTION gptlstop_handle(name,handle)
+CHARACTER(len=*) :: name
+INTEGER :: handle
+END  FUNCTION gptlstop_handle
+
+INTEGER FUNCTION gptlsetoption(option,val)
+INTEGER :: option, val
+END  FUNCTION gptlsetoption
+
+INTEGER FUNCTION gptlenable()
+END  FUNCTION gptlenable
+
+INTEGER FUNCTION gptldisable()
+END  FUNCTION gptldisable
+
+INTEGER FUNCTION gptlsetutr(option)
+INTEGER :: option
+END  FUNCTION gptlsetutr
+
+INTEGER FUNCTION gptlquery(name,t,count,onflg,wallclock,usr,sys,papicounters_out,maxcounters)
+CHARACTER(len=*) :: name
+INTEGER :: t, count
+INTEGER :: onflg
+REAL(kind=8) :: wallclock, usr, sys
+INTEGER(kind=8) :: papicounters_out
+INTEGER :: maxcounters
+END  FUNCTION gptlquery
+
+INTEGER FUNCTION gptlquerycounters(name,t,papicounters_out)
+CHARACTER(len=*) :: name
+INTEGER :: t
+INTEGER(kind=8) :: papicounters_out
+END  FUNCTION gptlquerycounters
+
+INTEGER FUNCTION gptlget_wallclock(name,t,value)
+CHARACTER(len=*) :: name
+INTEGER :: t
+REAL(kind=8) :: value
+END  FUNCTION gptlget_wallclock
+
+INTEGER FUNCTION gptlget_wallclock_latest(name,t,value)
+CHARACTER(len=*) :: name
+INTEGER :: t
+REAL(kind=8) :: value
+END  FUNCTION gptlget_wallclock_latest
+
+INTEGER FUNCTION gptlget_threadwork(name,maxwork,imbal)
+CHARACTER(len=*) :: name
+REAL(kind=8) :: maxwork
+REAL(kind=8) :: imbal
+END  FUNCTION gptlget_threadwork
+
+INTEGER FUNCTION gptlstartstop_val(name,value)
+CHARACTER(len=*) :: name
+REAL(kind=8) :: value
+END  FUNCTION gptlstartstop_val
+
+INTEGER FUNCTION gptlget_eventvalue(timername,eventname,t,value)
+CHARACTER(len=*) :: timername
+CHARACTER(len=*) :: eventname
+INTEGER :: t
+REAL(kind=8) :: value
+END  FUNCTION gptlget_eventvalue
+
+INTEGER FUNCTION gptlget_nregions(t,nregions)
+INTEGER :: t
+INTEGER :: nregions
+END  FUNCTION gptlget_nregions
+
+INTEGER FUNCTION gptlget_regionname(t,region,name)
+INTEGER :: t
+INTEGER :: region
+CHARACTER(len=*) :: name
+END  FUNCTION gptlget_regionname
+
+INTEGER FUNCTION gptlget_memusage(size,rss,share,text,datastack)
+INTEGER :: size, rss, share, text, datastack
+END  FUNCTION gptlget_memusage
+
+INTEGER FUNCTION gptlprint_memusage(str)
+CHARACTER(len=*) :: str
+END  FUNCTION gptlprint_memusage
+
+INTEGER FUNCTION gptlprint_rusage(str)
+CHARACTER(len=*) :: str
+END  FUNCTION gptlprint_rusage
+
+INTEGER FUNCTION gptlnum_errors()
+END  FUNCTION gptlnum_errors
+
+INTEGER FUNCTION gptlnum_warn()
+END  FUNCTION gptlnum_warn
+
+INTEGER FUNCTION gptlget_count(name,t,count)
+CHARACTER(len=*) :: name
+INTEGER :: t
+INTEGER :: count
+END  FUNCTION gptlget_count
+
+END INTERFACE 
+!contains
+CONTAINS
+  ! These routines are available only in the F90 interface (not C either)
+! gptlstart_threadohd_outer: 
+!   Start a timer with "_OUT" appended
+!   Reset the "_FNL" inner timer to zero in preparation for a threaded loop
+INTEGER FUNCTION gptlstart_threadohd_outer(name)
+CHARACTER(len=*), INTENT(IN) :: name
+CHARACTER(len=len(name) + 4) :: outername
+CHARACTER(len=len(name) + 4) :: innerlast
+INTEGER :: ret
+END  FUNCTION gptlstart_threadohd_outer
+
+! gptlstart_threadohd_inner: 
+!   Start a timer with '_INN" appended
+!   Start a timer with "_FNL" appended for subsequent use in overhead calcs.
+INTEGER FUNCTION gptlstart_threadohd_inner(name)
+CHARACTER(len=*), INTENT(IN) :: name
+CHARACTER(len=len(name) + 4) :: innername
+CHARACTER(len=len(name) + 4) :: innerlast
+INTEGER :: ret
+END  FUNCTION gptlstart_threadohd_inner
+
+! gptlstop_threadohd_inner: 
+!   Stop a timer with '_INN" appended
+!   Stop a timer with "_FNL" appended for subsequent use in overhead calcs.
+INTEGER FUNCTION gptlstop_threadohd_inner(name)
+CHARACTER(len=*), INTENT(IN) :: name
+CHARACTER(len=len(name) + 4) :: innername
+CHARACTER(len=len(name) + 4) :: innerlast
+INTEGER :: ret
+END  FUNCTION gptlstop_threadohd_inner
+
+! gptlstop_threadohd_outer:
+!   Estimate threading overhead and threading load imbalance, using the formulae:
+!   overhead = time wrapping do/enddo minus slowest thread inside the loop
+!   imbalance = slowest thread minus mean time taken by all threads,
+!     where "mean time taken by all threads" is taken as best possible time
+!   Two pseudo-timers are invoked, with "_imbal" and "_thdovr" appended to be
+!     tracked and reported by the main GPTL library
+INTEGER FUNCTION gptlstop_threadohd_outer(name)
+CHARACTER(len=*), INTENT(IN) :: name
+REAL(kind=8) :: innermax
+REAL(kind=8) :: imbal
+REAL(kind=8) :: outertime
+REAL(kind=8) :: threadover
+CHARACTER(len=len(name) + 4) :: outername
+CHARACTER(len=len(name) + 4) :: innerlast
+INTEGER :: ret
+END  FUNCTION gptlstop_threadohd_outer
+
+!end module gptl
+END MODULE gptl
+

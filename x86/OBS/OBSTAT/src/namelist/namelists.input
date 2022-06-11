@@ -1,0 +1,72 @@
+ &namelist_total
+   case_name                 = 'case_0_1_1'
+   redis_address             = '192.168.1.1:6379,192.168.1.2:6379,192.168.1.3:6379'
+   atm_mpas_sceneid          = 1
+   num_lon                   = 360
+   num_lat                   = 180
+   num_lev                   = 26
+   atm_mpas2atm_time         = '1 days'
+   atm_phase_diff            = 10800
+   da_endnn_in_seconds       = 30
+   da_start_time             = 2000,01,01,00,00
+   end_time                  = 2000,01,30,00,00
+   da_in_seconds             = 10800
+   atm_ensemble_total        = 1
+   atm_ensemble_group        = 1
+   da_ensemble               = 1
+   da_var_name               = 'u,v,t,ps'
+   da_asynchronous           = 0
+   da_mode                   = 0
+   atm_group                 = 12
+   atm_group_num             = 1
+   atm_stride                = 16
+   atm_root                  = 0
+   da_group                  = 4
+   da_group_num              = 1
+   da_stride                 = 16
+   da_root                   = 12
+/
+ &namelist_atm
+   num_proc_lon              = 2
+   num_proc_lat              = 6
+   test_case                 = 'rh4'
+   run_days                  = 1
+   time_scheme               = 'pc2'
+   dt_in_seconds             = 90
+   history_interval          = '3 hours'
+   reduce_factors            = 20, 20, 20, 15, 15, 15, 12, 12, 10, 10, 10, 10, 6, 6, 4, 4, 2, 2
+   use_div_damp              = .false.
+   use_vor_damp              = .false.
+   use_polar_damp            = .false.
+   try_read                  = 4122
+   job_proc_lat              = 20,30,40,40,30,20
+   member_num                = 1
+/
+ &hybrid_coord
+   template          = 'test_l26'
+/
+ &namelist_da
+   da_loc_distance           = 800.0
+   da_inflation_factor       = 1.0
+   da_polar_letkf_lat        = 80.0
+   da_block_interval         = 4
+   da_block_overlap          = 2
+   da_halo                   = 3
+   da_kernel                 = 5
+   da_conv_stride            = 3
+   da_pc_f                   = 9
+   da_pc_p1                  = 9
+   da_pc_p2                  = 9
+   da_proc_f                 = 0.001
+   da_proc_p                 = 0.999
+/
+ &namelist_obs
+   obs_hrz_interval_lon      = 10
+   obs_hrz_interval_lat      = 10
+   obs_vtc_interval          = 1
+   obs_var_name              = 'u,v,t,ps'
+   obs_stat_interval_lon     = 1
+   obs_stat_interval_lat     = 1
+   obs_stat_interval_vertical= 4
+   mpas_num_lev              = 26
+/

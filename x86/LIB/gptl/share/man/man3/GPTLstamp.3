@@ -1,0 +1,48 @@
+.TH GPTLstamp 3 "May, 2020" "GPTL"
+
+.SH NAME
+GPTLstamp \- Return wallclock, user time, and system time stamps to the caller.
+
+.SH SYNOPSIS
+.B C/C++ Interface:
+.nf
+#include <gptl.h>
+int GPTLstamp (double *wall, double *usr, double *sys);
+.fi
+
+.B Fortran Interface:
+.nf
+use gptl
+integer gptlstamp (real*8 wall, real*8 usr, real*8 sys)
+.fi
+
+.SH DESCRIPTION
+Return current timestamps for wallclock time, user CPU time, and system CPU time.
+
+.SH ARGUMENTS
+.I wall
+-- output wallclock time (seconds). Requires wallclock gathering be enabled (default)
+.I usr
+-- output user CPU time (seconds). Requires cpu gathering be enabled (GPTLsetoption(GPTLcpu,1))
+.I sys
+-- output system CPU time (seconds). Requires cpu gathering be enabled (GPTLsetoption(GPTLcpu,1))
+
+.SH RESTRICTIONS
+.B GPTLinitialize()
+must have been called.
+
+.SH RETURN VALUE
+On success, this function returns 0.
+On error, a negative error code is returned and a descriptive message
+printed. 
+
+.SH EXAMPLES
+.nf         
+.if t .ft CW
+
+double wall, usr, sys;
+if (GPTLstamp (&wall, &usr, &sys) != 0)
+  handle_error (1);
+
+.if t .ft P
+.fi

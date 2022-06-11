@@ -1,0 +1,36 @@
+&namelist_atm
+  num_lon              = 360
+  num_lat              = 180
+  num_lev              = 32
+  num_proc_total       = 20
+  member_total         = 1
+  partition_type       = 'irregular'
+  irr_part             = 5
+  irr_num_lat          = 11, 16, 126, 16, 11  
+  irr_num_proc_lon     = 2,  2,  4,   2,  2
+  irr_num_proc_lat     = 1,  1,  3,   1,  1
+  vert_coord_scheme    = 'hybrid'
+  vert_coord_template  = 'wrf_l32'
+  run_hours            = 240
+  history_interval     = '1 hours'
+  print_interval       = '1 hours'
+  output_nc            = .true.
+  output_debug         = .false.
+  case_name            = 'gmcore.d60v60'
+  time_scheme          = 'wrfrk3'
+  zonal_tridiag_solver = 'spk'
+  dt_in_seconds        = 300
+  filter_coef_a        = 1.8
+  filter_coef_b        = 0.3
+  filter_coef_c        = 0.2
+  topo_file            = '/home/xuewei/ddn/share/geog/ETOPO1_Ice_g_gmt4.grd'
+  use_topo_smooth      = .true.
+  bkg_type             = 'mpas'
+  bkg_file             = '/home/xuewei/ddn/share/inifile/mpas/360x180_0.5h-20190601/MPAS_360x180_2019-06-02_00.00.00.nc'
+  initial_file_type = 'time'
+  initial_interval  = 30
+  use_div_damp         = .true.
+  div_damp_imp_lat0    = 60
+  use_vor_damp         = .true.
+  vor_damp_imp_lat0    = 60
+/

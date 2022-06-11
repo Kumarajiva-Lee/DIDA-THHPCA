@@ -1,0 +1,83 @@
+ &namelist_total
+   case_name                 = 'test_yuz'
+   redis_address             = '192.168.1.1:6379'
+   atm_mpas_sceneid          = '1deg-l32-rh4'
+   num_lon                   = 360
+   num_lat                   = 180
+   num_lev                   = 32
+   atm_mpas2atm_time         = '1 days'
+   atm_phase_diff            = 43200
+   da_endnn_in_seconds       = 30
+   da_start_time             = 2018,12,02,00,00
+   end_time                  = 2018,12,21,00,00
+   da_in_seconds             = 10800
+   atm_ensemble_total        = 32
+   atm_ensemble_group        = 1
+   da_ensemble               = 1
+   da_var_name               = 'ps,u,v,pt'
+   da_asynchronous           = 0
+   da_mode                   = 0
+   atm_group                 = 60
+   atm_group_num             = 1
+   atm_stride                = 64
+   atm_root                  = 0
+   da_group                  = 4
+   da_group_num              = 1
+   da_stride                 = 64
+   da_root                   = 60
+/
+ &namelist_atm
+   num_proc_lon              = 1
+   num_proc_lat              = 60
+   test_case                 = 'rossby_haurwitz_wave'
+   initial_file              = '/share2/qsm/inifile/rh4/12h/rh4_00.nc'
+   time_scheme               = 'pc2'
+   start_time                = 2018,12,01,21,00
+   end_time                  = 2018,12,21,00,00
+   dt_in_seconds             = 90
+   print_interval            = '1 hours'
+   history_interval          = '0.5 hours'
+   reduce_factors            = 20, 20, 20, 15, 15, 15, 12, 12, 10, 10, 10, 10, 6, 6, 4, 4, 2, 2
+   use_div_damp              = .false.
+   use_vor_damp              = .false.
+   use_polar_damp            = .false.
+   try_read          = 4122
+   job_proc_lat              = 30,30,30,30,30,30
+   member_num        = 10
+   use_create_ensemble = .false.
+/
+&hybrid_coord
+  template          = 'test_l26'
+/
+ &namelist_da
+   da_loc_distance           = 6
+   da_inflation_factor       = 1
+   da_polar_letkf_lat        = 90.0
+   da_gc_enable              = .false.
+   da_obs_sparse             = 1
+   da_obs_dense              = 3
+   da_block_interval         = 1
+   da_block_overlap          = 0
+   da_halo                   = 0
+   da_kernel                 = 5
+   da_conv_stride            = 3
+   da_pc_f                   = 9
+   da_pc_p1                  = 9
+   da_pc_p2                  = 9
+   da_proc_f                 = 0.001
+   da_proc_p                 = 0.999
+/
+ &namelist_obs
+   obs_hrz_interval_lon      = 4
+   obs_hrz_interval_lat      = 4
+   obs_vtc_interval          = 4
+   obs_var_name              = 'pt,u,v,ps'
+   obs_stat_interval_lon     = 1
+   obs_stat_interval_lat     = 1
+   obs_stat_interval_vertical= 4
+   mpas_num_lev              = 26
+   onepoint_x                = 40
+   onepoint_y                = 150
+   onepoint_z                = 14
+   randn_filepath            = '/share2/qsm/data/'
+/
